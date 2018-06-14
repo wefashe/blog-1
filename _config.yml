@@ -88,10 +88,10 @@ douban:
   user: 179242800
   builtin: false
   book:
-    title: '阅读'
+    title: '阅读记录'
     quote: 
   movie:
-    title: '影视'
+    title: '观影打卡'
     quote:
   #game:
   #  title: '游戏''

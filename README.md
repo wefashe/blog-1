@@ -1,6 +1,6 @@
 ## My blog
 
-This repo contains all contents of my blog based on Hexo NexT.
+This repo contains all contents of my blog based on Hexo NexT. `hexo-source` branch contains source files and `master` branch includes web files published by Travis CI automatically.
 
 Please read the following copyright notice before using my posts and photos in this repo (for all branches). Only Chinese version provided.
 

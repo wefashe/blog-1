@@ -27,5 +27,5 @@ after_success:
   - sed -i "s/GH_TOKEN/${GH_TOKEN}/g" ./_config.yml
   - sed -i "s/CODING_TOKEN/${CODING_TOKEN}/g" ./_config.yml
   - cat ./_config.yml
-  - hexo deploy -m "By Travis CI"
+  - hexo deploy -m "Updated by Travis CI"
 # E: Build LifeCycle
