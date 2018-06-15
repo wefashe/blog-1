@@ -1,10 +1,11 @@
 ---
 title: 一个 MacBook Pro 无法充电的解决方法
-date: 2018-06-15 21:24:43
 categories: 札记
 tags:
-- MacBook
-- battery
+  - MacBook
+  - battery
+abbrlink: 2b488870
+date: 2018-06-15 21:24:43
 comments:
 mathjax:
 no_toc:
