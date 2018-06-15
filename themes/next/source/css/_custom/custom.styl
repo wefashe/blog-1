@@ -51,18 +51,18 @@
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
+
+  &:hover {
+  transition-duration: 0.3s;
+  background: #e1e1e1;
+  border-bottom-color: #222;
+  }
 }
 
 @media (max-width: 767px){
   .menu .menu-item a {
     padding: 4px 10px;
   }
-}
-
-.menu .menu-item a:hover {
-  transition-duration: 0.3s;
-  background: #e1e1e1;
-  border-bottom-color: #222;
 }
 
 
@@ -203,17 +203,6 @@
 }
 
 
-//MathJax 的静态显示
-/*
-.mjpage__block {
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-  overflow-x: auto;
-}
-*/
-
-
 //修改默认按钮样式
 .post-button {
   margin-top: 20px;
@@ -225,13 +214,13 @@
   color: #555;
   background: #fff;
   border: 1px solid transparent;
-}
 
-.btn:hover {
+  &:hover {
   border-color: transparent;
   color: #222;
   background: #fff;
   border-bottom-color: #222
+  }
 }
 
 
@@ -251,12 +240,12 @@
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
   line-height: 2;
-}
 
-.btncomment:hover {
+  &:hover {
   border-color: #222;
   color: #222;
   background: #fff;
+  }
 }
 */
 
@@ -274,13 +263,13 @@
   -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: 0.2s ease-out;
-}
 
-#rewardButton span:hover {
+  &:hover {
   background: #0485ab;
   -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   -moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 }
 
 #wechat:hover p{
@@ -294,6 +283,7 @@
 
 //文章标签样式
 .posts-expand .post-tags {
+  margin: 40px 12px 0 12px;
   text-align: left;
 }
 
@@ -303,18 +293,63 @@
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   font-family: 'Comic Sans MS', sans-serif;
   transition: 0.2s ease-out;
-  padding: 1px 5px;
+  padding: 3px 5px;
+  margin: 5px;
   background: #f5f5f5;
   border-bottom: none;
   border-radius: 2px;
-}
 
-.posts-expand .post-tags a:hover {
+  &:hover {
   background: rgba(100,154,182,0.902);
   color: #fff;
   -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   -moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+}
+
+
+//文章内链接文本样式
+.post-body p a{
+  color: #0477ab;
+  border-bottom: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+//文章内文字间距
+.post-body p {
+letter-spacing: .5px;
+}
+
+
+//相关文章样式
+.popular-posts-header {
+    margin-top: 45px;
+    font-size: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+ul.popular-posts .popular-posts-item .popular-posts-title a{
+  border-bottom: 1px dashed #999;
+  
+  &:hover{
+    border-bottom: 1px  dashed #222;
+  }
+}
+
+@media (max-width: 767px) {
+  .popular-posts-header {
+    margin-left: 10px;
+  }
+  ul.popular-posts .popular-posts-item .popular-posts-title{
+    padding-right: 12px;
+  }
+  ul.popular-posts .popular-posts-item {
+    margin-left: 2.5em;
+  }
 }
 
 

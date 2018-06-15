@@ -118,9 +118,9 @@ index_with_subtitle: false
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
   home: / || home
-  tags: /tags/ || tags
-  categories: /categories/ || th
-  #archives: /archives/ || archive
+  #tags: /tags/ || tags
+  #categories: /categories/ || th
+  archives: /archives/ || bookmark
   photos: /photos || camera-retro
   books: /books || book
   movies: /movies || film
@@ -311,7 +311,7 @@ codeblock:
   #description: ex. subscribe to my blog by scanning my public wechat account
 
 # Reward
-reward_comment: <p style="font-size:14px; color:#0493ab; margin:0 0 5px 0;">赞赏一下吧～ 还可以关注微信公众号订阅最新内容</p>
+reward_comment: <p style="font-size:14px; color:#0493ab; margin:0 0 5px 0;">赞赏一下吧～ 还可以关注公众号订阅最新内容</p>
 wechatpay: https://banbanramble-1256060851.cos.ap-shanghai.myqcloud.com/img/wechat_reward.jpg
 alipay: https://banbanramble-1256060851.cos.ap-shanghai.myqcloud.com/img/wechat_platform.jpg
 #bitcoin: /images/bitcoin.png
@@ -319,7 +319,7 @@ alipay: https://banbanramble-1256060851.cos.ap-shanghai.myqcloud.com/img/wechat_
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
 related_posts:
-  enable: false
+  enable: true
   title: # custom header, leave empty to use the default one
   display_in_home: false
   params:
@@ -405,7 +405,7 @@ font:
   # Global font settings used for all elements in <body>.
   global:
     external: true
-    family: Open Sans
+    family: Lato
     size:
 
   # Font settings for Headlines (H1, H2, H3, H4, H5, H6).

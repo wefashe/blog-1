@@ -55,11 +55,11 @@ counter:
   tag_cloud:
     zero: 暂无标签
     one: 目前共计 1 个标签
-    other: "目前共计 %d 个标签"
+    other: '<i class="fa fa-fw fa-tags"></i> 目前共计 %d 个标签'
   categories:
     zero: 暂无分类
     one: 目前共计 1 个分类
-    other: "目前共计 %d 个分类"
+    other: '<i class="fa fa-fw fa-th"></i> 目前共计 %d 个分类'
   archive_posts:
     zero: 暂无文章。
     one: 目前共计 1 篇文章。
