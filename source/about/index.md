@@ -2,7 +2,6 @@
 title: 关于「班班」
 date: 2018-05-29 16:13:32
 type: about
-mathjax:
 no_toc: true
 comments: 
 ---
