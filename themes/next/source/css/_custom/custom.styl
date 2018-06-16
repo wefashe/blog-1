@@ -69,9 +69,9 @@
 .post, .page {
   margin-bottom: 40px;
   padding: 25px 30px 25px;
-  -webkit-box-shadow: 0 0 14px rgba(202,203,204,.5);
-  -moz-box-shadow: 0 0 14px rgba(202,203,204,.5);
-  box-shadow: 0 0 14px rgba(202,203,204,.5);
+  -webkit-box-shadow: 0 0 14px #cacbcb;
+  -moz-box-shadow: 0 0 14px #cacbcb;
+  box-shadow: 0 0 14px #cacbcb;
   background: #fff;
   border-radius: 10px;
 }
@@ -88,34 +88,64 @@
 
 .posts-expand .post-title {
   font-size: 24px
-  border-left: #649ab6 10px solid;
+  border-left: #649ab6 8px solid;
   font-weight: 900;
+  padding-left: 10px;
 
+}
+
+.posts-expand .post-meta {
+    margin: 3px 0 40px 0;
+}
+
+.posts-expand .post-title, .posts-expand .post-meta {
+    text-align: left;
+}
+
+.page-post-detail .post-title, .page-post-detail .post-meta {
+  text-align: center;
+  border-left: none;
+  padding-left: 0;
 }
 
 .posts-expand .post-title-link{
   line-height: 1.5;
 }
 
+//移动端边距 bug 修正
 @media (max-width: 767px) {
-  .posts-expand {
-    margin: 0 20px !important;
-  }
   .post {
-    padding: 25px 5px 25px;
+    padding: 15px 5px 15px;
+  }
+    margin: 20px !important;
   }
   .posts-expand .post-title {
-    padding-left: 8px;
+    font-size: 21px;
+  }
+  .posts-expand .post-body li {
+    padding-right: 18px;
+  }
+  .hexo-douban-item {
+    width: inherit !important; 
+  }
+  .hexo-douban-item, .hexo-douban-tabs {
+    margin: 0 10px 0;
+  }
+  blockquote {
+    margin-left: 20px;
+    padding-left: 0;
+  }
+  hr {
+    margin: 40px 10px;
   }
 }
-
 
 //评论区
 .comments{
   padding: 25px 40px 25px;
-  -webkit-box-shadow: 0 0 14px rgba(202,203,204,.5);
-  -moz-box-shadow: 0 0 14px rgba(202,203,204,.5);
-  box-shadow: 0 0 14px rgba(202,203,204,.5);
+  -webkit-box-shadow: 0 0 14px #cacbcb;
+  -moz-box-shadow: 0 0 14px #cacbcb;
+  box-shadow: 0 0 14px #cacbcb;
   background: #fff;
   margin: 0;
   border-radius: 10px;
@@ -123,7 +153,7 @@
 
 @media (max-width: 767px) {
   .comments {
-    padding: 10px 10px 0px !important;
+    padding: 15px;
     margin: 0 20px 0 !important;
     }
 }
@@ -371,6 +401,8 @@ letter-spacing: .5px;
   margin-top: 45px;
   font-size: 20px;
   border-bottom: 1px solid #eee;
+  font-family: "PT Serif", "Songti SC", STZhongsong, "PingFang SC", "Microsoft YaHei", Georgia, sans;
+  font-weight: bolder;
 }
 
 ul.popular-posts .popular-posts-item .popular-posts-title a{
@@ -383,6 +415,7 @@ ul.popular-posts .popular-posts-item .popular-posts-title a{
 @media (max-width: 767px) {
   .popular-posts-header {
     margin-left: 10px;
+    margin-right: 10px;
   }
   ul.popular-posts .popular-posts-item .popular-posts-title{
     padding-right: 12px;
