@@ -412,7 +412,7 @@ font:
   # Fallback to `global` font settings.
   headings:
     external: true
-    family:
+    family: PT Serif
     size:
 
   # Font settings for posts.
@@ -431,7 +431,7 @@ font:
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
+    family: Source Code Pro
     size:
 
 

@@ -1,5 +1,5 @@
 // Custom styles.
-//标题的样式
+//标题区
 .headband {
   display: none;
 }
@@ -17,8 +17,6 @@
   color: #fff;
 }
 
-
-//导航栏样式
 .header {
   background: url("/uploads/header-bg.jpg");
   background-position-y: -15vh;
@@ -28,7 +26,9 @@
   padding: 25px 0 20px;
 }
 
-//要在 Muse 下事先导航栏图标与文字在同一行，
+//导航栏
+
+//要在 Muse 下实现导航栏图标与文字在同一行，
 //1. 需要将 themes/next/layout/_partials/header/menu.swig 中搜索图标后的换行符删去
 //2. 需要将 themes/next/layout/_macro/menu/menu-item.swig 中其他图标后的换行符删去
 
@@ -65,8 +65,8 @@
 }
 
 
-//首页文章样式
-.post {
+//内容区
+.post, .page {
   margin-bottom: 40px;
   padding: 25px 30px 25px;
   -webkit-box-shadow: 0 0 14px rgba(202,203,204,.5);
@@ -80,16 +80,6 @@
   margin: 30px 0 30px 6px;
 }
 
-.page {
-  margin-bottom: 60px;
-  padding: 25px 30px 25px;
-  -webkit-box-shadow: 0 0 14px rgba(202,203,204,.5);
-  -moz-box-shadow: 0 0 14px rgba(202,203,204,.5);
-  box-shadow: 0 0 14px rgba(202,203,204,.5);
-  background: #fff;
-  border-radius: 10px;
-}
-
 .posts-expand .post-eof {
   display: block;
   margin: 0px auto 30px;
@@ -99,15 +89,28 @@
 .posts-expand .post-title {
   font-size: 24px
   border-left: #649ab6 10px solid;
-  font-weight: bold;
+  font-weight: 900;
+
 }
 
 .posts-expand .post-title-link{
-  line-height: 2;
+  line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  .posts-expand {
+    margin: 0 20px !important;
+  }
+  .post {
+    padding: 25px 5px 25px;
+  }
+  .posts-expand .post-title {
+    padding-left: 8px;
+  }
 }
 
 
-//评论区样式
+//评论区
 .comments{
   padding: 25px 40px 25px;
   -webkit-box-shadow: 0 0 14px rgba(202,203,204,.5);
@@ -118,37 +121,27 @@
   border-radius: 10px;
 }
 
-
-//分类页项目符修正bug
-.category-all-page .category-list-item {
-    margin: 5px 30px;
-}
-
-
-//移动端布局修正bug
 @media (max-width: 767px) {
-  .posts-expand {
-    margin: 0 20px !important;
-    }
-  .post {
-    padding: 25px 5px 25px;
-    }
   .comments {
     padding: 10px 10px 0px !important;
     margin: 0 20px 0 !important;
     }
+}
+
+//分类页项目符修正bug
+.category-all-page .category-list-item {
+  margin: 5px 30px;
+}
+
+@media (max-width: 767px) {
   .category-all-page .category-list-item {
     margin: 5px 40px;
-    }
+   }
 }
 
 
-//页码栏样式
-.pagination {
-  border-top:none;
-}
-
-.pagination .prev, .pagination .next, .pagination .page-number {
+//页码栏
+.pagination, .pagination .prev, .pagination .next, .pagination .page-number {
   border-top:none;
 }
 
@@ -156,13 +149,15 @@
   border-radius: 3px;
 }
 
+
+//侧边栏
+
 //默认侧边栏多级目录展开
 /*
 .post-toc .nav .nav-child { 
     display: block; 
 }
 */
-
 
 //侧边栏信息样式修改
 .site-author-name {
@@ -185,40 +180,36 @@
 }
 
 .links-of-author a {
-    display: inline-block;
-    vertical-align: middle;
-    margin-bottom: 10px;
-    border-bottom-color: #555;
-    font-size: 13px;
-    background-color: #3a5c6b;
-    border-radius: 4px;
-    padding: 0px 8px;
-    color: #fff;
-}
-
-.links-of-blogroll-item {
-    padding: 0 8px;
-    background-color: #50842e;
-    border-radius: 4px;
-
-}
-
-.links-of-blogroll-item a {
-    color: #fff;
-    border-bottom-color: transparent;
-        display: inline;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 10px;
+  border-bottom-color: #555;
+  font-size: 13px;
+  background-color: #3a5c6b;
+  border-radius: 4px;
+  padding: 0px 8px;
+  color: #fff;
 }
 
 .links-of-author a:before, .links-of-author .exturl:before{
   background: #649ab6;
 }
 
-//侧栏按钮样式
-.sidebar-toggle {
-    background: #3a5c6b;
+.links-of-blogroll-item {
+  padding: 0 8px;
+  background-color: #50842e;
+  border-radius: 4px;
 }
 
-.back-to-top {
+.links-of-blogroll-item a {
+  color: #fff;
+  border-bottom-color: transparent;
+  display: inline;
+}
+
+
+//侧栏按钮样式
+.sidebar-toggle, .back-to-top {
     background: #3a5c6b;
 }
 
@@ -306,16 +297,12 @@
 }
 }
 
-#wechat:hover p{
-  animation: none;
-}
-
-#alipay:hover p{
+#wechat:hover p, #alipay:hover p {
   animation: none;
 }
 
 
-//文章标签样式
+//文章页内标签样式
 .posts-expand .post-tags {
   margin: 40px 12px 0 12px;
   text-align: left;
@@ -381,15 +368,13 @@ letter-spacing: .5px;
 
 //相关文章样式
 .popular-posts-header {
-    margin-top: 45px;
-    font-size: 20px;
-    border-bottom: 1px solid #eee;
-    font-family: SourceHanSerifCN-Heavy;
+  margin-top: 45px;
+  font-size: 20px;
+  border-bottom: 1px solid #eee;
 }
 
 ul.popular-posts .popular-posts-item .popular-posts-title a{
   border-bottom: 1px dashed #999;
-  
   &:hover{
     border-bottom: 1px  dashed #222;
   }
