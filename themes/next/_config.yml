@@ -159,7 +159,7 @@ site_state: true
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
 social:
-  Academic Web: https://dongleizhang.com || 
+  #Academic Web: https://dongleizhang.com || 
   LinkedIn: https://www.linkedin.com/in/dongleizhang || fa fa-fw fa-linkedin
   Twitter: https://twitter.com/donglei_zhang || fa fa-fw fa-twitter
   Zhihu: https://www.zhihu.com/people/ZhangDylan || iconfont icon-zhihu
@@ -190,12 +190,12 @@ social_icons:
 #github_banner: https://github.com/yourname || Follow me on GitHub
 
 # Blog rolls
-links_icon: link
-links_title: Links
-links_layout: block
+links_icon: globe
+links_title: Link
+#links_layout: block
 #links_layout: inline
-#links:
-  #Title: http://example.com/
+links:
+  Academic Web: https://dongleizhang.com
 
 # Sidebar Avatar
 avatar:

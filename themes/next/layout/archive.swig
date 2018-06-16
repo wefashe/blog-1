@@ -26,7 +26,7 @@
           {{ list_categories() }}
         </div>
       </div>
-      <br>
+      <hr>
       <div class="tag-cloud">
         <div class="tag-cloud-title">
           {% set visibleTags = 0 %}
@@ -36,12 +36,11 @@
             {% endif %}
           {% endfor %}
           {{ _p('counter.tag_cloud', visibleTags) }}
-        </div>
+        </div><br>
         <div class="tag-cloud-tags">
           {{ tagcloud({min_font: 12, max_font: 30, amount: 300, color: true, start_color: '#ccc', end_color: '#111'}) }}
         </div>
       </div>
-
     </div>
   </div>
 </div>
