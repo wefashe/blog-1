@@ -19,8 +19,8 @@ photo ={
            imageSize = data[i].split(' ')[0];
            imageX = imageSize.split('.')[0];
            imageY = imageSize.split('.')[1];
-            li += '<div class="card" style="width:250px">' +
-                    '<div class="ImageInCard" style="height:'+ 250 * imageY / imageX + 'px">' +
+            li += '<div class="card" style="width:230px">' +
+                    '<div class="ImageInCard" style="height:'+ 230 * imageY / imageX + 'px">' +
                       '<a data-fancybox="gallery" href="https://banbanramble-1256060851.cos.ap-shanghai.myqcloud.com/photos/' + imgNameWithPattern + '?raw=true" data-caption="' + imgName + '">' +
                         '<img src="https://banbanramble-1256060851.cos.ap-shanghai.myqcloud.com/photos/' + imgNameWithPattern + '?raw=true"/>' +
                       '</a>' +

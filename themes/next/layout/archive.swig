@@ -10,8 +10,8 @@
 
 <div id="posts" class="posts-expand">
   <div class="post-block page"> 
-    <div class="post-body{% if theme.han %} han-init-context{% endif %}{% if page.direction && page.direction.toLowerCase() === 'rtl' %} rtl{% endif %}">
-      <br>
+    <div class="post-body">
+      <h2 class="post-title" style=" border-left:none;padding-left:0;text-align:center;padding-top:0;">文章归档</h2><br>
       <div class="category-all-page">
         <div class="category-all-title">
           {% set visibleCategories = 0 %}
