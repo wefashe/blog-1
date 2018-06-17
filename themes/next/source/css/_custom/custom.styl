@@ -86,6 +86,16 @@ h1, h2, h3, h4, h5, h6 {
    font-weight:900;
 }
 
+//链接文本样式
+.post-body a{
+  color: #0477ab;
+  border-bottom: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .post, .page {
   margin-bottom: 40px;
   padding: 50px 30px 25px;
@@ -140,6 +150,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Lato, "PingFang SC", "Microsoft YaHei", Georgia, sans;
 }
 
+.posts-collapse .collection-title small {
+   color: #808080;
+}
+
+a#hexo-douban-tab1.hexo-douban-tab.hexo-douban-active, a#hexo-douban-tab2.hexo-douban-tab.hexo-douban-active , a#hexo-douban-tab3.hexo-douban-tab.hexo-douban-active {
+	color: #fff;
+	text-decoration: none;
+}
+
 
 //移动端边距 bug 修正
 @media (max-width: 767px) {
@@ -169,6 +188,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 40px 10px;
   }
 }
+
 
 //评论区
 .comments{
@@ -220,7 +240,9 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 4;
     word-break: keep-all;
 
+
     &:hover {
+    text-decoration: none;
     -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     -moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -443,6 +465,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 12px;
 
   &:hover {
+  text-decoration: none;
   background: rgba(100,154,182,0.902);
   color: #fff !important;
   -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -451,16 +474,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-
-//文章内链接文本样式
-.post-body a{
-  color: #0477ab;
-  border-bottom: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
 
 //文章内文字间距
 .post-body p {
