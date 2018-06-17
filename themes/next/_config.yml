@@ -673,10 +673,10 @@ firestore:
 busuanzi_count:
   enable: true
   site_uv: true #total visitors
-  site_uv_icon:  user-circle
-  site_uv_header: 访问用户：
-  site_uv_footer: 人
-  site_pv: true #total views
+  site_uv_icon:  #user-circle
+  site_uv_header: 你是来访的第
+  site_uv_footer: 位小伙伴
+  site_pv: false #total views
   site_pv_icon: eye
   site_pv_header: 访问次数：
   site_pv_footer: 次

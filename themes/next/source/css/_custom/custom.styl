@@ -15,12 +15,12 @@
 }
 
 .site-meta .site-subtitle {
-  font-family: 'Comic Sans MS', "PingFang SC", "Microsoft YaHei", Georgia, sans-serif;
+  font-family: Lato, "PingFang SC", "Microsoft YaHei", Georgia, sans-serif;
   color: #fff;
 }
 
 .header {
-  background: url("/uploads/header-bg2.jpg");
+  background: url("/uploads/header-bg.jpg");
   //background-position-y: -15vh;
 }
 
@@ -41,6 +41,10 @@ body {
 //要在 Muse 下实现导航栏图标与文字在同一行，
 //1. 需要将 themes/next/layout/_partials/header/menu.swig 中搜索图标后的换行符删去
 //2. 需要将 themes/next/layout/_macro/menu/menu-item.swig 中其他图标后的换行符删去
+
+.menu {
+  margin-top: 30px;
+}
 
 .menu .menu-item {
   margin: 0 2px;
@@ -69,6 +73,10 @@ body {
 }
 
 @media (max-width: 767px){
+  .menu {
+    margin-top: 20px;
+  }
+
   .menu .menu-item a {
     padding: 4px 10px;
     color: #0f2e41;
@@ -86,6 +94,11 @@ h1, h2, h3, h4, h5, h6 {
    font-weight:900;
 }
 
+//文章内文字间距
+.post-body p {
+  letter-spacing: .5px;
+}
+
 //链接文本样式
 .post-body a{
   color: #0477ab;
@@ -94,6 +107,10 @@ h1, h2, h3, h4, h5, h6 {
   &:hover {
     text-decoration: underline;
   }
+}
+
+.posts-expand .post-body img {
+    border: 0px;
 }
 
 .post, .page {
@@ -159,8 +176,6 @@ a#hexo-douban-tab1.hexo-douban-tab.hexo-douban-active, a#hexo-douban-tab2.hexo-d
 	text-decoration: none;
 }
 
-
-//移动端边距 bug 修正
 @media (max-width: 767px) {
   .post {
     padding: 15px 5px 15px;
@@ -192,7 +207,7 @@ a#hexo-douban-tab1.hexo-douban-tab.hexo-douban-active, a#hexo-douban-tab2.hexo-d
 
 //评论区
 .comments{
-  padding: 25px 40px 25px;
+  padding: 30px 35px 30px;
   -webkit-box-shadow: 0 0 14px #cacbcb;
   -moz-box-shadow: 0 0 14px #cacbcb;
   box-shadow: 0 0 14px #cacbcb;
@@ -203,7 +218,7 @@ a#hexo-douban-tab1.hexo-douban-tab.hexo-douban-active, a#hexo-douban-tab2.hexo-d
 
 @media (max-width: 767px) {
   .comments {
-    padding: 15px;
+    padding: 20px;
     margin: 0 20px 0 !important;
     }
 }
@@ -265,15 +280,14 @@ a#hexo-douban-tab1.hexo-douban-tab.hexo-douban-active, a#hexo-douban-tab2.hexo-d
 }
 
 .pagination {
-    margin: 60px 0 20px;
+  margin: 60px 0 20px;
 }
 
-//侧边栏
 
 //默认侧边栏多级目录展开
 /*
 .post-toc .nav .nav-child { 
-    display: block; 
+  display: block; 
 }
 */
 
@@ -329,6 +343,10 @@ a#hexo-douban-tab1.hexo-douban-tab.hexo-douban-active, a#hexo-douban-tab2.hexo-d
 //侧栏按钮样式
 .sidebar-toggle, .back-to-top {
     background: #3a5c6b;
+}
+
+.sidebar-toggle-line {
+    background: #fff !important;
 }
 
 
@@ -475,13 +493,7 @@ a#hexo-douban-tab1.hexo-douban-tab.hexo-douban-active, a#hexo-douban-tab2.hexo-d
 }
 
 
-//文章内文字间距
-.post-body p {
-letter-spacing: .5px;
-}
-
-
-//相关文章样式
+//相关文章
 .popular-posts-header {
   margin-top: 45px;
   font-size: 20px;
@@ -490,7 +502,7 @@ letter-spacing: .5px;
   font-weight: 900;
 }
 
-ul.popular-posts .popular-posts-item .popular-posts-title a{
+ul.popular-posts .popular-posts-item .popular-posts-title a {
   border-bottom: 1px dashed #999;
   &:hover{
     border-bottom: 1px  dashed #222;
@@ -502,7 +514,7 @@ ul.popular-posts .popular-posts-item .popular-posts-title a{
     margin-left: 10px;
     margin-right: 10px;
   }
-  ul.popular-posts .popular-posts-item .popular-posts-title{
+  ul.popular-posts .popular-posts-item .popular-posts-title {
     padding-right: 12px;
   }
   ul.popular-posts .popular-posts-item {
@@ -512,14 +524,33 @@ ul.popular-posts .popular-posts-item .popular-posts-title a{
 
 
 //相册样式
-.ImageGrid {width: 100%;max-width: 1040px;margin: 0 auto; text-align: center;}
-.card {overflow: hidden;transition: .3s ease-in-out; border-radius: 8px; background-color: #ddd;}
-.ImageInCard {}
-.ImageInCard img {padding: 0 0 0 0;border-radius: 8px;}
+.ImageGrid {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card {
+  overflow: hidden;
+  transition: .3s ease-in-out;
+  border-radius: 8px;
+  background-color: #ddd;
+}
+
+.ImageInCard img {
+  padding: 0 0 0 0;
+  border-radius: 8px;
+}
+
 //图片下显示文件名作为说明的功能
-//.TextInCard {line-height: 54px; background-color: #ffffff; font-size: 24px;}
-
-
+/*
+.TextInCard {
+  line-height: 54px;
+  background-color: #ffffff;
+  font-size: 24px;
+}
+*/
 
 
 //页脚

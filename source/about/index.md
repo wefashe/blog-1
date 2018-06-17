@@ -7,7 +7,7 @@ comments:
 ---
 欢迎访问班班的个人博客！
 
-博客的名字「BanbanRamble」直译就是「班班碎碎念」，主要记录一些日常生活、科研随笔与文摘。这里还收录了自 2015 年 5 月本科毕业季至今，我撰写并发布于微信公众号、知乎等平台上的文章。博客副标题以及「相册」、「阅读」与「影视」页上的第一句话均出自马一浮所作的《[浙江大学校歌](http://www.zju.edu.cn/574/list.htm)》歌词。
+博客的名字「BanbanRamble」直译就是「班班碎碎念」，主要记录一些日常生活、科研随笔与文摘。这里还收录了自 2015 年 5 月本科毕业季至今，我撰写并发布于微信公众号、知乎等平台上的文章。
 
 你可以在下方评论区给我留言，也可以通过邮件联系我。如果喜欢我博客的设计，[star and fork on GitHub](https://github.com/dldylan/blog)！
 
@@ -18,12 +18,11 @@ comments:
 　　<i class="fa fa-fw fa-globe"></i>&nbsp;&nbsp;[学术主页](https://dongleizhang.com)
 
 ### 在这里发现更多
-　　<i class="fa fa-fw fa-weixin"></i>&nbsp;&nbsp;公众号：BanbanRamble
+　　<i class="fa fa-fw fa-weixin"></i>&nbsp;&nbsp;微信订阅：<a data-fancybox="gallery" href="https://banbanramble-1256060851.cos.ap-shanghai.myqcloud.com/img/wechat_platform.jpg">班班碎碎念</a>
 　　<i class="iconfont icon-zhihu"></i>&nbsp;&nbsp;知乎：[回答](https://www.zhihu.com/people/ZhangDylan/answers)、[专栏](https://zhuanlan.zhihu.com/econramble)、[Live](https://www.zhihu.com/lives/922106856669868032)
 　　<i class="iconfont icon-douban"></i>&nbsp;&nbsp;豆瓣：[读书](https://book.douban.com/people/179242800)、[电影](https://movie.douban.com/people/179242800)、[游戏](https://www.douban.com/people/179242800/games)
-　　<i class="fa fa-fw fa-twitter"></i>&nbsp;&nbsp;[Twitter](https://twitter.com/donglei_zhang)
-　　<i class="fa fa-fw fa-github"></i>&nbsp;&nbsp;[GitHub](https://github.com/dldylan)
-
+　　<i class="fa fa-fw fa-twitter"></i>&nbsp;&nbsp;Twitter：[@donglei_zhang](https://twitter.com/donglei_zhang)
+　　<i class="fa fa-fw fa-github"></i>&nbsp;&nbsp;GitHub：[@dongleizhang](https://github.com/dongleizhang)
 
 ### 著作权与免责声明
 博客中的作品（包括文章、照片），除特别注明为转载或引用外，本人对其拥有著作权。文章言论只代表个人观点，不代表我所属的或者曾经所属机构的立场与观点。
