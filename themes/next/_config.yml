@@ -648,7 +648,7 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: true
+  enable: false
   app_id: EsreAB7Wk1nywHfRdRGdwUnd-gzGzoHsz
   app_key: SYNEEXF74zGPuCfrseHobeTJ
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
@@ -679,7 +679,7 @@ busuanzi_count:
   site_pv_icon: eye
   site_pv_header: 访问次数：
   site_pv_footer: 次
-  post_views: false
+  post_views: true
   post_views_icon: eye
 
 
