@@ -102,8 +102,5 @@ douban:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   - type: git
-    repo: https://GH_TOKEN@github.com/dldylan/blog.git
-    branch: master
-  - type: git
-    repo: https://dldylan:CODING_TOKEN@git.coding.net/dldylan/dldylan.coding.me.git
+    repo: https://GH_TOKEN@github.com/dongleizhang/blog.git
     branch: master
