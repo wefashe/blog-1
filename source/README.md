@@ -1,5 +1,5 @@
 ## My blog
-[![Build Status](https://travis-ci.org/dldylan/blog.svg?branch=hexo-source)](https://travis-ci.org/dldylan/blog)
+[![Build Status](https://travis-ci.org/dongleizhang/blog.svg?branch=hexo-source)](https://travis-ci.org/dongleizhang/blog)
 
 This repo contains all contents of my blog based on Hexo NexT. `hexo-source` branch contains source files and `master` branch includes web files published by Travis CI automatically.
 

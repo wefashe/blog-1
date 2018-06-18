@@ -19,4 +19,6 @@ permalink: /404
 
 * [Twitter](https://twitter.com/donglei_zhang)
 * [LinkedIn](https://www.linkedin.com/in/dongleizhang)
-* [GitHub](https://github.com/dldylan)
+* [GitHub](https://github.com/dongleizhang)
+* [Zhihu](https://www.zhihu.com/people/ZhangDylan/answers)
+* [Douban](https://www.douban.com/people/179242800)

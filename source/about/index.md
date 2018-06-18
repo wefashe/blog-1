@@ -9,7 +9,7 @@ comments:
 
 博客的名字「BanbanRamble」直译就是「班班碎碎念」，主要记录一些日常生活、科研随笔与文摘。这里还收录了自 2015 年 5 月本科毕业季至今，我撰写并发布于微信公众号、知乎等平台上的文章。
 
-你可以在下方评论区给我留言，也可以通过邮件联系我。如果喜欢我博客的设计，[star and fork on GitHub](https://github.com/dldylan/blog)！
+你可以在下方评论区给我留言，也可以通过邮件联系我。如果喜欢我博客的设计，[star and fork on GitHub](https://github.com/dongleizhang/blog)！
 
 ### 在这里了解班班
 　　<i class="fa fa-fw fa-envelope"></i>&nbsp;&nbsp;dongleidylan # foxmail.com (替换 # 为 @）
