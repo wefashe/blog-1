@@ -4,7 +4,6 @@ categories: 学术
 tags:
   - economics
   - research
-  - bookmark
 abbrlink: ceda0f99
 date: 2017-02-21 18:30:00
 mathjax:

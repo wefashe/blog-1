@@ -2,7 +2,6 @@
 title: 'Crowdfunding and Online Social Capital: A Research Idea'
 categories: 学术
 tags:
-  - idea
   - research
   - crowdfunding
   - social network
