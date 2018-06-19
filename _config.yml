@@ -96,7 +96,7 @@ douban:
   #game:
   #  title: '游戏''
   #  quote:
-  timeout: 20000 #optional
+  timeout: 30000 #optional
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
