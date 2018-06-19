@@ -1,22 +1,22 @@
 ---
 title:
-  archive: 归档
+  archive: 文章归档
   category: 分类
   tag: 标签
   schedule: 日程表
 menu:
   home: 首页
-  archives: 归档
+  archives: 文章归档
   categories: 分类
   tags: 标签
-  about: 关于
+  about: 关于班班
   search: 搜索
   schedule: 日程表
   sitemap: 站点地图
   commonweal: 公益 404
-  photos: 相册
-  books: 阅读
-  movies: 影视
+  photos: 光影留痕
+  books: 阅读记录
+  movies: 观影打卡
 sidebar:
   overview: 站点概览
   toc: 文章目录
