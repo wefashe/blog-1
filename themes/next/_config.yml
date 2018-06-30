@@ -160,10 +160,9 @@ site_state: true
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
 social:
   Twitter: https://twitter.com/donglei_zhang || fa fa-fw fa-twitter
-  LinkedIn: https://www.linkedin.com/in/dongleizhang || fa fa-fw fa-linkedin
   GitHub: https://github.com/dongleizhang || fa fa-fw fa-github
   Zhihu: https://www.zhihu.com/people/ZhangDylan || iconfont icon-zhihu
-  Douban: https://www.douban.com/people/179242800 || iconfont icon-douban
+  Academic Web: https://dongleizhang.com || fa fa-fw fa-globe
   #Email: mailto:mail@gmail.com || envelope
   #Google: https://plus.google.com/yourname || google
   #FB Page: https://www.facebook.com/yourname || facebook
@@ -193,8 +192,8 @@ links_icon: globe
 links_title: Link
 #links_layout: block
 #links_layout: inline
-links:
-  Academic Web: https://dongleizhang.com
+#links:
+#  Academic Web: https://dongleizhang.com
 
 # Sidebar Avatar
 avatar:
