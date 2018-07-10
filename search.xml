@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[博客文章写作的排版规范]]></title>
+    <url>%2Fposts%2F8f12814%2F</url>
+    <content type="text"><![CDATA[屏幕中文章的显示效果其实和书面纸质化的效果有比较大的差异，因此原本的书写与排版规则可能在实际的博客写作中不太适用了。所以这里参考其他人所提倡的网页文字的中西文排版格式，自己设定了一些基本的规范，主要参考了 知乎的问题修改规范有哪些。 1. 标点符号1.1 全角与半角 如果西文占主要内容，则除引用原文外，采用半角标点符号； 如果中文占主要内容，则除引用原文外，采用全角标点符号； 但是如果用于特别的段落，以便开头空两格，则可以在西文中使用全角空格。 1.2 引号 包裹对象为中文时使用直角引号，先用单引号「 」，再用双引号『 』； 包裹对象为西文时可以使用“ ”或‘ ’且左右留有半角空格，先用双引号，再单引号； 间接引用中，引号内句末的句号、问号、感叹号等标点符号应去掉。 1.3 分号 在使用项目符或者顺序列表的并列句中，前几项结尾以分号结束，最后一项以句号结束，各项之间采用逗号或者顿号分句或者分词，例如上述几个规范的罗列。 1.4 括号与书名号 中文书名、篇名、报纸名、杂志名、歌曲名、影剧名和图表名，用书名号《 》或&lt; &gt;，先用前者，再用后者； 西文书名、篇名、报纸名、杂志名、歌曲名、影剧名和图表名，用斜体标识； 括号用作注明翻译或原文时应置于书名号外。 2. 空格2.1 段落中相间 中西文（和其他西文半角符号、行内公式）间留一个半角空格； 中文和阿拉伯数字之间同样需留一个半角空格； 超链接文字的前后需留一个半角空格，但与标点符号之间不用留空格，避免断行时行首出现标点符号； 行内代码的前后不用留空格； 中文文字与全角标点符号之间不需要空格。 2.2 分级标题 采用阿拉伯数字作为分级标题； 一级标题为：1.、2.、3.，数字加半角句号，并与标题文字间留一个半角空格； 二级标题为：1.1、1.2、1.3，一级标题序号与二级标题序号间用半角句号相隔，结尾无半角句号，并与标题文字间留一个半角空格； 三级标题为：1.1.1、2.1.3，尽量不采用三级标题，而用段首加粗文字等形式实现。 3. 段落3.1 分段 原则上开头不空两格全角空格，直接顶格，并在段落间空一行； 特别的文字排版如果为了尊重原文布局等，可以采用开头空两格全角空格，段落间不空行的排版； 独立成行的公式前后不空行，在 Markdown 写作中直接在行内用一对双美元符号$$ $$包裹即可。 3.2 断行 行首应该避免出现如逗号、句号、分号、感叹号、问号、省略号、顿号、后引号、后括号、后书名号等表示词语或句子结尾的标点符号，前括号、前书名号、前引号等可以出现在行首； 断行时应该注意尽量不要让末行只有几个字成行。]]></content>
+      <categories>
+        <category>札记</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+        <tag>排版</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[MacBook Pro 显示「不在充电」的解决方法]]></title>
+    <url>%2Fposts%2F2b488870%2F</url>
+    <content type="text"><![CDATA[刚才发现我的 MacBook Pro 电池显示「Battery is not charging」，而且电量也从 100% 下降到了 92%，不过依然是显示「Power Source: Power Adapter」。 因为用 HDMI 线外接了一台 Dell 的显示器，所以一开始是怀疑用电量大于充电量导致的。不过无论是否连接外接显示器，都是一样的不在充电，即使插拔了电源插头也是如此。 无奈给 Apple 支援热线打电话咨询，Apple 支援的客服给出了三个解决方案： 重启大法好 把电源插头直接接入墙壁的插座，确认是否是电压问题 关机拔掉电源，按住 shift+control+option+开机键（指纹识别处）连续十秒，然后开机 尝试了前两个方法均告失败，尝试第三个方法开机后一开始还是显示「Battery is not charging」，不过很快就变成了下面这样： 本来以为没用多久的电脑硬件出问题该去 Genius Bar 维修了，不过现在看来是软件问题就不用担心了。顺便说，苹果的售后和客服质量还是相当不错的，每次体验都还符合期待。另外记录一下，万一哪天 macOS 又抽风出问题了可以按照同样方法解决。]]></content>
+      <categories>
+        <category>札记</category>
+      </categories>
+      <tags>
+        <tag>MacBook</tag>
+        <tag>battery</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo NexT 博客增加知乎豆瓣图标支持]]></title>
+    <url>%2Fposts%2F89dad1c1%2F</url>
+    <content type="text"><![CDATA[因为 Hexo NexT 原始主题是采用了 Font Awesome 图标，并未包含如知乎、豆瓣这类中国大陆的社交网站图标。所以需要加入另一种图标的支持，使得博客可以显示出知乎、豆瓣这类的图标。 1. 基本步骤首先，前往 阿里巴巴矢量库 挑选自己需要的图标，在想要的图标上点击 把它们都加入购物车。 然后，点击页面右上方 进入购物车，选择「下载代码」。 将下载的文件解压后，找到 iconfont.css 文件，打开后将其中的所有内容都复制加入到 /themes/next/source/css/_custom/custom.styl 文件中的任意位置。这里需要修改部分内容，使得图标样式可以和主题样式保持一致。 第一段 @font-face 的所有属性都不用改； 第二段 .iconfont 的属性中，需要将字体大小修改为 font-size:inherit;，如果需要将这些图标用于侧边栏社交账号展示，还要再加入间距的属性 padding: 2px;，以适配主题默认的样式； 最后的几行 .icon-zhihu 类似字样的就是后续需要引用图标的名称，短线 - 之后的名字可以自己修改定义。 在这样设置好以后，就可以在博客需要额外图标的地方使用 &lt;i class=&quot;iconfont icon-xxx&quot;&gt;&lt;/i&gt; 的进行引用了。 2. 侧边栏社交网站图标设置但是这里有一个问题，如果想在侧边栏的社交网站列表里加入知乎、豆瓣这类图标，就不是这样引用了。因为主题配置文件中，对侧边栏的社交网站图标的引用省略了 class 的部分内容，将其加入到了 layout 的模版里，所以现在是不能直接填写 zhihu 或者 icon-zhihu 这样属性到主题配置文件中的。 要修改模板中的配置，需要打开 /themes/next/layout/_macro/sidebar.swig，找到以下内容 1#&#125;&lt;i class=&quot;fa fa-fw fa-&#123;&#123; link.split(&apos;||&apos;)[1] | trim | default(&apos;globe&apos;) &#125;&#125;&quot;&gt;&lt;/i&gt;&#123;# 将改行修改为以下内容，保存。 1#&#125;&lt;i class=&quot;&#123;&#123; link.split(&apos;||&apos;)[1] | trim | default(&apos;fa fa-fw fa-globe&apos;) &#125;&#125;&quot;&gt;&lt;/i&gt;&#123;# 加下来，在主题配置文件 social 项目下，把原来配置的图标名称前都加上 fa fa-fw fa-，注意加入的内容和原始名称之间没有空格；然后对新增的图标，图标名称填写为类似 iconfont icon-douban。 通过以上设置，执行 hexo clean &amp;&amp; hexo g 就可以让侧边栏社交网站图标支持显示知乎、豆瓣了。 3. 配置文件参考因为阿里巴巴矢量库里有多个知乎、豆瓣的图标，大小不一，即使设置了字体大小页可能无法和原始图像大小一致，这让强迫症的我不能忍。经过仔细挑选我终于找到了合适大小的两个图标，如果大家需要在侧边栏显示知乎、豆瓣，在 /themes/next/source/css/_custom/custom.styl 文件中可以直接加入以下内容： 123456789101112131415161718192021//知乎豆瓣图标 font-class引用@font-face &#123;font-family: "iconfont"; src: url('iconfont.eot?t=1528847148903'); /* IE9*/ src: url('iconfont.eot?t=1528847148903#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAYUAAsAAAAACIgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsP6z7U9TLzIAAAE8AAAARAAAAFZW7kimY21hcAAAAYAAAABmAAABnM+nbGdnbHlmAAAB6AAAAigAAAJIGJn6FGhlYWQAAAQQAAAALwAAADYRrDxZaGhlYQAABEAAAAAcAAAAJAfeA4VobXR4AAAEXAAAABAAAAAQD+kAAGxvY2EAAARsAAAACgAAAAoBmgDsbWF4cAAABHgAAAAfAAAAIAETAF1uYW1lAAAEmAAAAUUAAAJtPlT+fXBvc3QAAAXgAAAAMQAAAEIxfhjKeJxjYGRgYOBikGPQYWB0cfMJYeBgYGGAAJAMY05meiJQDMoDyrGAaQ4gZoOIAgCKIwNPAHicY2Bk/sU4gYGVgYOpk+kMAwNDP4RmfM1gxMjBwMDEwMrMgBUEpLmmMDgwVDzbxdzwv4EhhrmBoQEozAiSAwAx0A0oeJzFkNEJwCAMRC/GFikdpZ+lOE+/OoKzOVDWsEn0xwk8eTE5DiIC2ACwcikRoA8E06suuc843I94dE56gt5FstTWps5EnkjesSVpxzLRutWzTq/3mOy/y0CfKLljvtQOwg+NwxM7AAB4nB3PzWvTcBjA8d/z+zVJX5MmaV6aNk2T2KZbu9Y1bWqna1mVwqas9QVlB6F1Igi+4GkwBu6gIOhh1wq+IMIEbx487aCC4MF/wKO6g568emk03cP38PBcHj6IQujfd3JAVCSiElpEZ9AQIaDLYLFYB9NpVHEZJJOSlBRLHNsxGduqkmVQLDol171GUaEZmgMWcuCadc+pYgeajQ4+CXVZB0hntItCISuQPYiqTu6hv4ZfgWTYWa6z4K9Wuql6XgxvxQUhLQhPwjRFhTEOcSzcVuQIFYnS/muK06QDYw4bEE872rmNRD4jjB817ugFJQKwuwtiJs/ud3mND9rRZFFIM8lEWNUS9rEUbB3GVDGuF3+iYEhg/Uw+kC46hU6jtcDpVqEMXhfcRtExO9AqHmForxXsriIzNguSywITRMuzY5DSgRowXkvkXaXl8sRmHJt3YfQRC3if4NALOuH/ApmnLqQVVcfZWLzNXcEY3oncV0bm5M5lgucXzueSucQbzMZ25gXqd1/ffro63FTTh7BuFVZWxtQSFdqwQsbw0uJSJESRcnt7PZNs4spVo3KtDzGCS+382dIn3K08Nroe3J9uDof42fRtr4ejM2voCLxHZmoRKUhHSDQlE7yW4/Im7zKyYktmE5qmBIGdZh7gv9Mwtmrl5XvTl7eWj1f+kPx0Au/9b7U2XC/1CBpMn/dHc3DC/1LqjwcDyE0m/o+7oxs3g0//AcOlaXN4nGNgZGBgAGI3hpVx8fw2Xxm4WRhA4LpbjQ6C/n+UhYHZHsjlYGACiQIA9CsInAB4nGNgZGBgbvjfwBDDwgACQJKRARWwAABHCgJtBAAAAAPpAAAEAAAABAAAAAAAAAAAdgDsASQAAHicY2BkYGBgYQhkYGUAASYg5gJCBob/YD4DABESAXEAeJxlj01OwzAQhV/6B6QSqqhgh+QFYgEo/RGrblhUavdddN+mTpsqiSPHrdQDcB6OwAk4AtyAO/BIJ5s2lsffvHljTwDc4Acejt8t95E9XDI7cg0XuBeuU38QbpBfhJto41W4Rf1N2MczpsJtdGF5g9e4YvaEd2EPHXwI13CNT+E69S/hBvlbuIk7/Aq30PHqwj7mXle4jUcv9sdWL5xeqeVBxaHJIpM5v4KZXu+Sha3S6pxrW8QmU4OgX0lTnWlb3VPs10PnIhVZk6oJqzpJjMqt2erQBRvn8lGvF4kehCblWGP+tsYCjnEFhSUOjDFCGGSIyujoO1Vm9K+xQ8Jee1Y9zed0WxTU/3OFAQL0z1xTurLSeTpPgT1fG1J1dCtuy56UNJFezUkSskJe1rZUQuoBNmVXjhF6XNGJPyhnSP8ACVpuyAAAAHicY2BigAAuBuyAhZGJkZmRhZGVgbGCtSojM6OUpzgjsShVNyW/NCkxj4EBAF/8B44AAAA=') format('woff'), url('iconfont.ttf?t=1528847148903') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('iconfont.svg?t=1528847148903#iconfont') format('svg'); /* iOS 4.1- */&#125;.iconfont &#123; font-family:"iconfont" !important; font-size:inherit; font-style:normal; padding: 2px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;&#125;.icon-zhihu:before &#123; content: "\e6ba"; &#125;.icon-douban:before &#123; content: "\e638"; &#125; 此外，主题配置文件中，社交账号图标设置好以后，类似是以下这样的格式，大家可以对比一下确保没有设置错： 123456social: Twitter: https://twitter.com/user_id || fa fa-fw fa-twitter LinkedIn: https://www.linkedin.com/in/user_id || fa fa-fw fa-linkedin GitHub: https://github.com/user_id || fa fa-fw fa-github Zhihu: https://www.zhihu.com/people/user_id || iconfont icon-zhihu Douban: https://www.douban.com/people/user_id/ || iconfont icon-douban]]></content>
+      <categories>
+        <category>建站记录</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>blog</tag>
+        <tag>icon</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[建站简史]]></title>
+    <url>%2Fposts%2F82ef8c2e%2F</url>
+    <content type="text"><![CDATA[自己最早的博客应该要算是新浪博客了，大概在中学时代就开通了。有模有样地发布了几篇自己写的作文，不过后来感觉编辑很麻烦，加上主题又不好看，所以就放弃了。之后简单地用过 Lofter ，不过主题只适合放照片不适合展示文字，于是放弃。在大学的时候转投了 Weebly ，当年没被屏蔽，浏览起来也挺顺畅的，就尝试着建立了一个个人主页。后来给我们「斯威敏学派」科研训练团队做了一个蛮不错的团队形象展示网站。 由于科研训练项目的结束以及 GFW 的屏蔽，Weebly 也就最终被抛弃了。来了香港之后又试了试在 Strikingly 建立个人网站，并且参考了 Fei Zhou 的网页设计。Strikingly 好是好，但是免费版的话只是一个单页网站，有些内容展示起来不是很方便，只适合作为个人电子简历之类的用途。 在使用 Strikingly 期间，尝试将 简书 作为个人博客。简书支持富文本模式和 Markdown 两种模式，但是感觉这个社区发布的很多都是一些文艺小清新的文字，首页推荐的也大多是这类，而且存在一大票僵尸粉。于是，转投 知乎专栏 。知乎专栏的互动效果明显好于简书，相关专业的知乎用户也蛮多的，而且编辑器用起来也比较顺手。 由于开设的知乎专栏主要局限于经济学领域，而且 Strikingly 也不是很好用，我开始探索其他工具、平台。找来找去感觉还是 GitHub 好用。个人学术网站基于 Freelancer，参考了 Jichun Si 的大致内容布局并进行了魔改。个人博客开始是基于 LoeiFy 设计的 Mirror 主题，使用 GitHub Issues 进行内容编辑。不过因为不能进行个性化设置，现在改成了被大家广泛使用的 Hexo NexT。 总结一下目前博客主要依托的第三方服务：评论系统采用了 Valine，并在某种程度上可以实现评论自动邮件提醒；文章浏览统计基于 LeanCloud，网站访客数统计则依靠不蒜子，另外采用百度统计方便我自己查看数据；图片和视频存储使用了腾讯云的 COS 对象存储，免费额度应该足够使用了；博客依靠 Travis CI 监视 GitHub 上博客源文件分支的文件变动，自动生成静态网页文件并部署到 GitHub Pages。]]></content>
+      <categories>
+        <category>建站记录</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+        <tag>homepage</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo NexT 博客实现点击按钮加载评论功能]]></title>
+    <url>%2Fposts%2F75af62bd%2F</url>
+    <content type="text"><![CDATA[参考：Hexo Next 主题点击加载 Disqus 和来必力双评论系统 - Chalkit’s blog 对于评论插件低选择，首选当然是 Disqus，毕竟界面好看而且功能齐全，但是很遗憾中国大陆无法访问。对此，有两种替代方案，第一是转用其他的评论插件，我这里采用了 Valine；第二种方法是浏览文章时默认不加载评论，以方便无法访问 Disqus 的用户加快文章加载速度，当用户需要查看评论时候点击一个按钮加载评论。 要设置点击按钮后再加载 Disqus 评论，首先需要修改 /themes/next/layout/_partials/comments.swig 文件，定位到以下位置： 1&lt;div id="disqus_thread"&gt; 在上述代码之前，加入以下这段加载评论按钮的代码： 12345&lt;div style="text-align:center;"&gt; &lt;button class="btncomment" id="load-disqus" onclick="disqus.load();"&gt; Load Disqus comments &lt;/button&gt;&lt;/div&gt; 提示： 因为我自己修改了默认的 btn 按钮样式，就没有用默认的 btn 按钮。你也可以直接把 btncomment 改成 btn，这样就不用设置这里自定义设置 btncomment 按钮的样式了，具体 btncomment 设置见我的 自定义 CSS 文件。 接下来要修改 /themes/next/layout/_scripts/third-party/comments/ 目录下的 disqus.swig 文件，定位到以下位置，并插入下面注释中说明的五行代码，设置添加的按钮功能： 1234567891011121314151617181920212223242526272829303132333435363738394041&lt;script type="text/javascript"&gt;var disqus = &#123; //插入这一行代码 (1/5)load : function disqus()&#123; //插入这一行代码 (2/5) var disqus_config = function () &#123; this.page.url = '&#123;&#123; page.permalink &#125;&#125;'; this.page.identifier = '&#123;&#123; page.path &#125;&#125;'; this.page.title = '&#123;&#123; page.title| addslashes &#125;&#125;'; &#123;% if __('disqus') !== 'disqus' -%&#125; this.language = '&#123;&#123; __('disqus') &#125;&#125;'; &#123;% endif -%&#125; &#125;; function loadComments () &#123; var d = document, s = d.createElement('script'); s.src = 'https://&#123;&#123;theme.disqus.shortname&#125;&#125;.disqus.com/embed.js'; s.setAttribute('data-timestamp', '' + +new Date()); (d.head || d.body).appendChild(s); &#125; &#123;% if theme.disqus.lazyload %&#125; $(function () &#123; var offsetTop = $('#comments').offset().top - $(window).height(); if (offsetTop &lt;= 0) &#123; // load directly when there's no a scrollbar loadComments(); &#125; else &#123; $(window).on('scroll.disqus_scroll', function () &#123; var scrollTop = document.documentElement.scrollTop; if (scrollTop &gt;= offsetTop) &#123; $(window).off('.disqus_scroll'); loadComments(); &#125; &#125;); &#125; &#125;); &#123;% else %&#125; loadComments(); &#123;% endif %&#125; $('#load-disqus').remove(); //插入这一行代码 (3/5) &#125; //插入这一行代码 (4/5)&#125; //插入这一行代码 (5/5)&lt;/script&gt;]]></content>
+      <categories>
+        <category>建站记录</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>blog</tag>
+        <tag>Disqus</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo NexT 博客增加瀑布流相册页面]]></title>
+    <url>%2Fposts%2F3720dafc%2F</url>
+    <content type="text"><![CDATA[参考：asdfv1929’s Home - Hexo NexT主题内添加相册功能 要展示自己拍摄的一些照片，可以给博客添加一个瀑布流的相册页面。 1. 创建页面和导航栏首先新建相册页面 hexo new page photos，这样会在 /source/ 下创建 photos/index.md，在其中添加 type: picture。 之后在主题配置文件中对应位置 menu 里添加 photos: /photos || camera-retro ，这样生成后就有导航栏菜单了。 2. json 文件处理图片信息在博客根目录的 /scripts/ 文件夹下新建一个 phototool.js 文件，内容如下。主要功能是访问照片文件夹，获取每张照片的大小和文件名，并生成对应的 json 文件： 12345678910111213141516171819202122232425262728293031"use strict"; const fs = require("fs"); const sizeOf = require('image-size'); //本地照片所在目录 const path = "source/photos/images"; //要放置生成的照片信息文件目录，建议直接放在 source/photos/ 文件夹下 const output = "source/photos/photoslist.json"; var dimensions; fs.readdir(path, function (err, files) &#123; if (err) &#123; return; &#125; let arr = []; (function iterator(index) &#123; if (index == files.length) &#123; fs.writeFileSync(output, JSON.stringify(arr, null, "\t")); return; &#125; fs.stat(path + "/" + files[index], function (err, stats) &#123; if (err) &#123; return; &#125; if (stats.isFile()) &#123; dimensions = sizeOf(path + "/" + files[index]); console.log(dimensions.width, dimensions.height); arr.push(dimensions.width + '.' + dimensions.height + ' ' + files[index]); &#125; iterator(index + 1); &#125;) &#125;(0)); &#125;); 创建好并把照片放在目录后，执行以下命令： 123cd &lt;folder-path&gt; #定位到 Hexo 博客目录npm install image-size #如果已安装了 image-size 可以跳过node tool.js #生成对应的 json 文件 node tool.js这个步骤以后可以不用手动执行，每次 hexo s 或者 hexo deploy 时候会被自动执行。 json 文件样例如下： 123456789[ "4032.3024 IMG_0391.JPG", "12500.3874 IMG_0404.JPG", "4032.3024 IMG_0416.JPG", "4032.3024 IMG_0424.JPG", "3024.4032 IMG_0427.JPG", "4032.3024 IMG_0429.JPG", "4032.3024 IMG_0430.JPG"] 3. photo.js 和 minigrid.min.js在 /themes/next/source/js/src/ 目录下创建一个 photo.js，内容如下： 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051photo =&#123; page: 1, //offset 用于设置照片数量的上限 offset: 100, init: function () &#123; var that = this; //这里设置的是刚才生成的 json 文件路径 $.getJSON("/photos/photoslist.json", function (data) &#123; that.render(that.page, data); //that.scroll(data); &#125;); &#125;, render: function (page, data) &#123; var begin = (page - 1) * this.offset; var end = page * this.offset; if (begin &gt;= data.length) return; var html, imgNameWithPattern, imgName, imageSize, imageX, imageY, li = ""; for (var i = begin; i &lt; end &amp;&amp; i &lt; data.length; i++) &#123; imgNameWithPattern = data[i].split(' ')[1]; imgName = imgNameWithPattern.split('.')[0] imageSize = data[i].split(' ')[0]; imageX = imageSize.split('.')[0]; imageY = imageSize.split('.')[1]; //这里 250 指的是图片的宽度，可以根据自己的需要调整相册中照片的大小 li += '&lt;div class="card" style="width:250px"&gt;' + '&lt;div class="ImageInCard" style="height:'+ 250 * imageY / imageX + 'px"&gt;' + //href 和 src 的链接地址是相册照片外部链接，也可以放博客目录里 '&lt;a data-fancybox="gallery" href="/photos/images/' + imgNameWithPattern + '?raw=true" data-caption="' + imgName + '"&gt;' + '&lt;img src="/photos/images/' + imgNameWithPattern + '?raw=true"/&gt;' + '&lt;/a&gt;' + '&lt;/div&gt;' + // '&lt;div class="TextInCard"&gt;' + imgName + '&lt;/div&gt;' + //图片下显示文件名作为说明的功能 '&lt;/div&gt;' &#125; $(".ImageGrid").append(li); $(".ImageGrid").lazyload(); this.minigrid(); &#125;, minigrid: function() &#123; var grid = new Minigrid(&#123; container: '.ImageGrid', item: '.card', gutter: 12 &#125;); grid.mount(); $(window).resize(function() &#123; grid.mount(); &#125;); &#125;&#125;photo.init(); minigrid.min.js 可以 下载 获得，放在同样的目录下。 然后如果指向让两个文件在相册页加载，需要修改 /themes/next/layout/_scripts/commons.swig 为以下内容，这里的判断语句表示如果页面的类型是 picture 就加载 minigrid.min.js 和 photo.js（注意，其他的 js 文件你的可能和我不一样，请将直接原本的内容放在 else 中，比如我额外增加了一个 canvasline.js。 1234567891011121314151617181920212223&#123;% if page.type ===&apos;picture&apos; %&#125;&#123;% set js_commons = [ &apos;src/utils.js&apos;, &apos;src/motion.js&apos;, &apos;src/minigrid.min.js&apos;, &apos;src/photo.js&apos;, &apos;src/canvasline.js&apos; ]%&#125;&#123;% else %&#125;&#123;% set js_commons = [ &apos;src/utils.js&apos;, &apos;src/motion.js&apos;, &apos;src/canvasline.js&apos; ]%&#125;&#123;% endif %&#125;&#123;% for common in js_commons %&#125; &lt;script type=&quot;text/javascript&quot; src=&quot;&#123;&#123; url_for(theme.js) &#125;&#125;/&#123;&#123; common &#125;&#125;?v=&#123;&#123; version &#125;&#125;&quot;&gt;&lt;/script&gt;&#123;% endfor %&#125; 4. 配置样式按照我在 CSS 自定义样式文件中的 设置，设置好相册的样式。 5. 开启 lazyload 和 fancybox在主题配置文件中，一步一步按照说明安装和开启 lazyload 和 fancybox 功能即可，不再赘述。 6. 放入相册在第一步创建好的 /source/photos/index.md 文档中编辑好自己需要的相册页面内容，在需要放置相册的位置加入以下内容即可： 1&lt;div class="ImageGrid"&gt;&lt;/div&gt; 最后 hexo clean &amp;&amp; hexo deploy -g 就可以把相册页设置好了。 总结终于有了瀑布流的相册页面功能了，之前尝试了好多种方法都不尽如人意，借鉴了 asdfv1929 的方法 这次终于搞定，还是很开心的。当然因为 asdfv1929 的方法对主题源文件做了过多的修改，导致步骤看起来有点复杂了，所以我自己稍微进行了改进，这样操作起来更加容易。]]></content>
+      <categories>
+        <category>建站记录</category>
+      </categories>
+      <tags>
+        <tag>相册</tag>
+        <tag>Hexo</tag>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[非程序员的个人主页与博客搭建记录（下篇）]]></title>
+    <url>%2Fposts%2F32005d86%2F</url>
+    <content type="text"><![CDATA[上篇介绍了域名与解析、个人主页设计等内容，本篇主要介绍博客的搭建与个性化修改。博客的搭建与配置均基于 Hexo v3.7.1 和 NexT v6.3.0。 1. 环境配置与 Hexo 初始化要使用 Hexo NexT 主题的博客，需要先配置好环境，安装下列应用程序，只需要下载相应安装程序安装即可。 Node.js Git 所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo，在终端 Terminal 中输入以下命令，输入密码，再回车即可。 1sudo npm install -g hexo-cli 提示： macOS 用户在编译时候可能会提示没有缺少 Command Line Tools，需要在终端输入 xcode-select --install，然后根据提示安装 Command Line Tools。 安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。 123hexo init &lt;folder-path&gt; #在指定文件夹中初始化 Hexocd &lt;folder-path&gt; #定位到 Hexo 博客目录npm install 新建完成后，指定文件夹的目录中： _config.yml 包含了网站的配置信息（后续称之为「站点配置文件」，具体配置的说明可以查看相关 文档。 themes 是主题文件夹，Hexo 会根据主题来生成静态页面。 source 文件夹是存放用户资源的地方，除 _posts 文件夹之外，开头命名为 _（下划线）的文件 / 文件夹和隐藏的文件将会被忽略；Markdown 和 HTML 文件会被解析并放到 public 文件夹，而其他文件会被复制过去（如 CNAME 文件）。 2. Hexo 基本命令基本的命令也可以参考官方 中文文档，这里介绍几条常用的命令。需要提醒的是，使用以下命令需要在终端中先将路径定位到 Hexo 博客目录： 1cd &lt;blog-path&gt; #定位到 Hexo 博客目录 2.1 新建文章与页面使用以下的第一句可以在 source/_post/ 文件夹下新建一篇 Markdown 文章；使用以下的第二句可以在 source 下新建以 &lt;page-title&gt; 为名称的文件夹，文件夹内的 index.md 可以在编译后生成一个新的页面。 12hexo new "&lt;post-title&gt;" #新建文章hexo new page "&lt;page-title&gt;" #新建页面 2.2 生成静态文件因为原始的都是 Markdown 文件，要让浏览器可以显示美观的网页，需要根据 Markdown 文件生成 HTML 静态文件。执行以下命令： 12345#生成静态文件hexo generate #或者 hexo g#如果报错，可以先执行尝试解决npm install hexo --save 2.3 本地预览调试要在本地预览调试生成的博客网页效果，可以执行以下命令。访问网址为：http://localhost:4000/。 1hexo serve #或者 hexo s 2.4 部署网站设计完成的博客需要上传部署到 GitHub ，但是部署前需要在「站点配置文件」_config.yml 中配置 GitHub 项目的名称等信息： 12345# Deploymentdeploy: type: git repo: https://github.com/&lt;github-username&gt;/&lt;github-repo-name&gt; branch: &lt;github-repo-branch&gt; 如果是要同时部署在 GitHub 和 Coding，则可以按照下述的命令进行配置（注意缩进保持一致）： 12345678# Deploymentdeploy: - type: git repo: https://github.com/&lt;github-username&gt;/&lt;github-repo-name&gt; branch: &lt;github-repo-branch&gt; - type: git repo: https://git.coding.net/&lt;coding-username&gt;/&lt;coding-repo-name&gt; branch: &lt;coding-repo-branch&gt; 设置完成后，执行以下命令。第一次执行过程中会提示输入相应用户名和密码，正确输入后既可以正常部署（后续部署就不再需要输入用户名和密码）。 12345#部署网站hexo deploy #或者 hexo d#如果报错，可以先执行尝试解决npm install hexo-deployer-git --save 2.5 清除缓存在某些情况（尤其是更换主题后），如果发现对站点的更改无论如何也不生效，可能需要运行该命令，清除缓存文件 db.json 和已生成的静态文件 public。 1hexo clean 2.6 多条命令同时执行在两条命令直接采用 &amp;&amp; 进行连接即可同时执行两条命令。另外，使用以下的命令可以简化命令的使用： 12hexo s -g #启动服务器之前预先生成静态文件，等价于 hexo g &amp;&amp; hexo shexo g -d #静态文件生成后立即部署网站，等价于 hexo g &amp;&amp; hexo d 2.7 添加文章命令后自动打开编辑器参考：Hexo添加文章时自动打开编辑器 - Doublemine 在站点文件夹根目录新建文件夹 scripts，然后在文件夹内新建文件 openeditor.js，写入以下内容： 如果是 Windows 平台，则将下列内容写入脚本： 1234567891011var spawn = require('child_process').exec;// Hexo 2.x 用户复制这段hexo.on('new', function(path)&#123; spawn('start "markdown编辑器绝对路径.exe" ' + path);&#125;);// Hexo 3 用户复制这段hexo.on('new', function(data)&#123; spawn('start "markdown编辑器绝对路径.exe" ' + data.path);&#125;); 如果是 macOS 平台，则将下列内容写入脚本： 1234567891011var exec = require('child_process').exec;// Hexo 2.x 用户复制这段hexo.on('new', function(path)&#123; exec('open -a "markdown编辑器绝对路径.app" ' + path);&#125;);// Hexo 3 用户复制这段hexo.on('new', function(data)&#123; exec('open -a "markdown编辑器绝对路径.app" ' + data.path);&#125;); 2.8 Shell 脚本执行命令这里提供几个脚本文件，方便一次执行多个命令。要制作可以直接双击打开执行的脚本文件，首先执行以下命令： 123cd &lt;file-path&gt; #定位到指定文件目录touch &lt;script&gt;.sh #生成脚本文件chmod +x &lt;script&gt;.sh #设置脚本文件可以直接双击打开执行 编辑脚本文件内容（见我的 hexo-shell-admin 项目页面），保存关闭。然后在 Finder 中右键脚本文件，并选择 Get Info。在 Open with: 里选择 Other...。在弹出对话框中，从 Enable 下拉菜单中选择 All Applications，找到并选择 Terminal ，点击 Open。这样就成功设置了该脚步文件的默认打开程序是 Terminal ，当然也可以点击 Change All...，一劳永逸地解决默认程序打开问题。 3. 主题以及样式自定义默认的主题似乎不是很好看，所以需要更换主题。我的博客采用的是被大家广泛使用的 NexT 主题，个人感觉朴素、简洁、大方。要更换主题，可以执行以下命令下载主题文件。当然也可以从 GitHub 直接下载 NexT 主题发布的最新版本压缩包，解压后将文件放在 &lt;blog-path&gt;/themes/next 目录下面。 12cd &lt;blog-path&gt; #定位到 Hexo 博客目录git clone https://github.com/theme-next/hexo-theme-next /themes/next 下载好主题文件后，使用文本编辑器打开博客根目录下的「站点配置文件」_config.yml，找到 theme 键值，将值修改为 next 即可。 注意： 修改主题使用的是博客根目录下的「站点配置文件」_config.yml，不是主题文件夹 /themes/next 中的「主题配置文件」_config.yml。同时，配置文件中所有的配置项冒号与值之间都要有一个半角空格，不然配置不会生效。 NexT 主题的配置可以在 NexT 使用文档 中找到，或者按照配置文件中的注释介绍一步一步进行修改（比如增加标签、分类页，修改导航栏内容等），这里不再赘述。以下着重提一些需要注意的问题，或者一些无法提供修改配置文件达到的效果。接下的介绍，使用的是主题文件夹 /themes/next 中的「主题配置文件」_config.yml。在 /themes/next/source/css/_custom/custom.styl 文件中添加代码可以自定义样式，我的设置可以看 这里。 3.1 favicon 图标图标的生成可以参考上篇提及的 方法，图标文件可以放到 /themes/next/source/images/（默认图标放在这里）或者 hexo-site/source/ 目录下。不过，建议把文件放至到后者的目录下，避免和默认的图标造成混淆。同时，如果要加入安卓或者微软设备的图标配置，需要调整下载获得的 manifest.json 和 browserconfig.xml 文件中的图标路径。 注意： 如果图标文件放至在 /themes/next/source/images/ 或者 source/images/ 目录下，务必注意不要和 /themes/next/source/images/ 目录下的默认图标文件名一样，否则在生成静态文件的时候，默认图标文件会覆盖这些图标文件。 3.2 本地搜索与站点地图添加博客搜索功能可以为访客查找文章提供方便。要添加本地搜索功能，可以执行以下命令： 12cd &lt;blog-path&gt; #定位到 Hexo 博客目录npm install hexo-generator-searchdb --save 接下来，编辑主题配置文件，将 local_search 下面的 enable 键值设置为 true 以启用本地搜索： 123# Local searchlocal_search: enable: true 生成 Google 站点地图然后提交给 Google Console，可以加快 Google 对网站的收录。要自动生成站点地图，可以执行以下命令，这样以后每次执行 hexo g，都会生成新的站点地图文件 sitemap.xml。 12cd &lt;blog-path&gt; #定位到 Hexo 博客目录npm install hexo-generator-sitemap --save 3.3 评论插件要启用博客文章评论，可以在「主题配置文件」的 Third Party Services Settings 部分找到，NexT 主题提供了多种的评论插件以供选择。在选择博客评论插件上，个人比较偏好于 Disqus，界面好看而且功能齐全，但是很遗憾中国大陆无法访问。对此的一种替代方案是浏览文章时默认不加载评论，以方便无法访问 Disqus 的用户加快文章加载速度，当用户需要查看评论时候点击一个按钮加载评论。详细方法可以查看我的另一篇文章：Hexo NexT 博客实现点击按钮加载评论功能 | BanbanRamble。 我这里采用了 Valine，启用方法可以直接参考 官方文档介绍。如果要开启邮件通知，可以参考 赵俊的博客中的介绍。 对于不需要开启评论的文章，只需要在 Markdown 文件开头处增加： 1comments: false 3.4 文章页前后篇文章页底部的时间较前的文章位置在左，时间较后的文章位置在右；这个不同于我习惯上的时间较前的文章位置在右，时间较后的文章位置在左。所以需要在 themes/next/layout/_macro/post.swig 中进行修改，一种是修改左右位置，一种是加注「前一篇」、「后一篇」，为了简便我选择了后者。 找到 &lt;div class=&quot;post-nav-next post-nav-item&quot;&gt;，在相应位置加注，变成以下两段内容： 1234567891011121314151617&lt;div class=&quot;post-nav-next post-nav-item&quot;&gt;&#123;% if post.next %&#125; &lt;a href=&quot;&#123;&#123; url_for(post.next.path) &#125;&#125;&quot; rel=&quot;next&quot; title=&quot;&#123;&#123; post.next.title &#125;&#125;&quot;&gt; &lt;i class=&quot;fa fa-chevron-left&quot;&gt;&lt;/i&gt; 前一篇：&#123;&#123; post.next.title &#125;&#125; &lt;/a&gt;&#123;% endif %&#125;&lt;/div&gt;&lt;span class=&quot;post-nav-divider&quot;&gt;&lt;/span&gt;&lt;div class=&quot;post-nav-prev post-nav-item&quot;&gt;&#123;% if post.prev %&#125; &lt;a href=&quot;&#123;&#123; url_for(post.prev.path) &#125;&#125;&quot; rel=&quot;prev&quot; title=&quot;&#123;&#123; post.prev.title &#125;&#125;&quot;&gt; 后一篇：&#123;&#123; post.prev.title &#125;&#125; &lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt; &lt;/a&gt;&#123;% endif %&#125;&lt;/div&gt; 3.5 文章底部标签图标参考：Hexo博客之主题美化 - Fengdi’s Blog 在每一篇文章的结尾会显示本文的标签，默认的显示效果是在每一个标签名字前面加 #。如果希望将其改为 ，那么只需要在 /themes/next/layout/_macro/post.swig 中定位到 1&lt;a href="&#123;&#123; url_for(tag.path) &#125;&#125;" rel="tag"&gt;# &#123;&#123; tag.name &#125;&#125;&lt;/a&gt; 将其改为以下内容即可： 1&lt;a href="&#123;&#123; url_for(tag.path) &#125;&#125;" rel="tag"&gt;&lt;i class="fa fa-fw fa-tag"&gt;&lt;/i&gt; &#123;&#123; tag.name &#125;&#125;&amp;nbsp;&lt;/a&gt; 3.6 特定页面选择性关闭某些功能侧边栏目录参考：在Hexo NexT主题中关闭指定文章的Table of Contents - Codebiz 侧边栏目录对于阅读长篇的文章特别有帮助，但是如果某些页面不想要出现这个目录（比如我的 关于 页面），就需要做一些修改了。 在 /themes/next/layout/_macro/sidebar.swig 中定位到 1&#123;% set display_toc = is_post and theme.toc.enable or is_page and theme.toc.enable %&#125; 将该行修改为 1&#123;% set display_toc = is_post and theme.toc.enable and !page.no_toc or is_page and theme.toc.enable and !page.no_toc %&#125; 这样，对于不想出现侧边栏目录的页面，只需要在其 Markdown 文件开头加入以下选项就可以隐藏侧边栏目录了。 1no_toc: true 著作权声明参考：Hexo/next添加相册页 - 肯特の天地 要在某个页面关闭底部的著作权声明（如果之前在主题配置文件中已经选择开启显示页面底部的著作权声明），那么可以修改 /themes/next/layout/_macro/post.swig，定位到 theme.post_copyright.enable，在该行代码中加入 and not post.copyright.disable，修改后的效果如下： 1&#123;%if theme.post_copyright.enable and not is_index and not post.copyright.disable%&#125; 接下来将原先的 Markdown 文件开头修改为如下内容即可关闭该页面底部的著作权声明： 12copyright: disable: true 打赏参考：打赏是否能支持给单独文章配置？ 修改 layout/post.swig 中的 12345&lt;div&gt; &#123;% if not is_index %&#125; &#123;% include &apos;reward.swig&apos; %&#125; &#123;% endif %&#125;&lt;/div&gt; 为 1234567&#123;% if post.no_reward %&#125; &lt;div&gt; &#123;% if not is_index %&#125; &#123;% include &apos;reward.swig&apos; %&#125; &#123;% endif %&#125; &lt;/div&gt;&#123;% endif %&#125; 这样在文章的头部加上 no_reward: true 便能对单个文章关闭打赏功能。 3.7 自定义标题中文字体/themes/next/source/css/_variables/custom.styl 中加入以下内容： 1$font-family-headings = "PT Serif", "Songti SC", STZhongsong, "PingFang SC", "Microsoft YaHei", Georgia, sans 其中，PT Serif 是从 Google Fonts 引入的西文标题字体，Songti SC 可以为预装了该字体的 macOS 用户提供最佳体验，STZhongsong 则是服务于 Windows 用户，如果上述两个系统的用户没有预先按照这两款字体，则转为分别使用 PingFang SC 和 Microsoft YaHei 这两款字体。 3.8 与主题样式一致的 404 页面参考：在 Hexo 中创建匹配主题的404页面 - MOxFIVE’s Blog 要生成一个和主题样式一致的 404 页面，首先需要新建一个页面： 12cd &lt;blog-path&gt; #定位到 Hexo 博客目录hexo new page "404" 然后编辑该页面的 Markdown 文件开头为以下内容，正文部分可以自行编辑内容： 123456---title: 404 Not Foundno_toc: truecomments: falsepermalink: /404--- 其中 permalink: /404 表示将该文件解析生成的 HTML 文件永久链接设置为 /404，这样就可以让访客访问错误链接时看到这个页面了。可以点击查看本博客站点的 404 页面。 3.9 增加知乎、豆瓣图标支持具体方法请阅读我的另一篇文章 Hexo NexT 博客增加知乎豆瓣图标支持 | BanbanRamble。 4. 增加更多功能4.1 永久性链接参考：Hexo之URL持久化 - DongSheng’s Blog Hexo 默认生成的文章地址路径是 :year/:month/:day/:title/。这种链接对搜索爬虫很不友好，因为它的url结构超过了三层，太深了；而且，如果修改了文章的文件名，就相应会修改其路径，无法保证链接的永久性，所以需要进行修改。 这里使用插件 hexo-abbrlink 来生成博客文章的永久链接，可以查看该插件的 GitHub 项目页面。首先需要进行安装： 12cd &lt;blog-path&gt; #定位到 Hexo 博客目录npm install hexo-abbrlink --save 然后在「站点配置文件」中修改 permalink: :year/:month/:day/:title/ 为以下内容: 1234permalink: posts/:abbrlink/abbrlink: alg: crc32 #support crc16(default) and crc32 rep: hex #support dec(default) and hex 这样执行 hexo clean &amp;&amp; hexo g 后就可以更新永久链接了。如果需要更新原有的链接，只需要删去每篇文章的 Markdown 文件开头的 abbrlink: xxxxx 相关信息，然后重新执行 hexo clean &amp;&amp; hexo g 即可。 4.2 相册与图床关于创建瀑布流的相册，请查看我的另一篇文章：Hexo NexT 博客增加瀑布流相册页面 | BanbanRamble。 文章图片的存储如果放至在博客项目下，会极大地增加项目的空间。所以可以将图片上传到图床，然后在需要图片的地方引用该图片外部链接即可。公开的公共图床个人比较推荐的是采用微博相册或者 GitHub Issues 作为图床。不过我现在选择了腾讯云的 COS 对象存储，提供每个月 10 GB 的免费外网下行流量，以及每个月 50 GB 的免费存储空间，个人感觉足够使用了（毕竟博客也没很大的访问量）。 另外介绍一个 macOS 上十分实用的批量打水印软件「XnConvert」，完全免费： 下载地址 使用说明 4.3 MathJax 的静态显示（未采用）参考：Hexo 中 MathJax 的静态显示 - Reuixiy’s Blog 4.4 增加动态背景（未采用）参考：Cherry’s Blog 首先设置好自定义样式，可以参考我的 自定义 CSS 文件。 然后把 canvasline.js 放入 /themes/next/source/js/src/ 目录，可以从 Cherry’s Blog 的相同位置获得该文件。 修改 /themes/next/layout/_layout.swig 文件，在 &lt;body&gt; 标签后插入 123&lt;div class="bg_content"&gt; &lt;canvas id="canvas"&gt;&lt;/canvas&gt;&lt;/div&gt; 修改 /themes/next/layout/_scripts/commons.swig 文件，在 set js_commons = [ ] 的括号中加入刚才的 canvasline.js 路径，即 &#39;src/canvasline.js&#39;，注意其中的多个文件路径之间要用 , 分隔。 4.5 busuanzi 的修正NexT v6.3.0 版本中的 busuanzi 变量名改变了，但是其中的样式变量名没有变更，导致页脚的访客数与访问量之间没有空格的间隔。此外，还可以增加页脚访问量的文字说明。具体改变如下： 主题配置文件中 busuanzi 项目变更为： 123456789101112busuanzi_count: enable: true site_uv: true #total visitors site_uv_icon: user site_uv_header: 访问用户： site_uv_footer: 人 site_pv: true #total views site_pv_icon: eye site_pv_header: 访问次数： site_pv_footer: 次 post_views: true post_views_icon: eye /themes/next/layout/_third-party/analytics/busuanzi-counter.swig 变更为： 123456789101112131415161718192021222324252627&#123;% if theme.busuanzi_count.enable %&#125;&lt;div class="busuanzi-count"&gt; &lt;script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"&gt;&lt;/script&gt; &#123;% if theme.busuanzi_count.site_uv %&#125; &lt;span id="busuanzi_container_site_uv" style='display:none'&gt; &lt;span class="site-uv" title="&#123;&#123; __('footer.site_uv') &#125;&#125;"&gt; &lt;i class="fa fa-&#123;&#123; theme.busuanzi_count.site_uv_icon &#125;&#125;"&gt;&lt;/i&gt;&amp;nbsp &#123;&#123; theme.busuanzi_count.site_uv_header &#125;&#125; &lt;span class="busuanzi-value" id="busuanzi_value_site_uv"&gt;&lt;/span&gt; &#123;&#123; theme.busuanzi_count.site_uv_footer &#125;&#125; &lt;/span&gt; &lt;/span&gt; &#123;% endif %&#125; &#123;% if theme.busuanzi_count.site_pv %&#125; &lt;span id="busuanzi_container_site_uv" style='display:none'&gt; &lt;span class="site-pv" title="&#123;&#123; __('footer.site_pv') &#125;&#125;"&gt; &lt;i class="fa fa-&#123;&#123; theme.busuanzi_count.site_pv_icon &#125;&#125;"&gt;&lt;/i&gt;&amp;nbsp &#123;&#123; theme.busuanzi_count.site_pv_header &#125;&#125; &lt;span class="busuanzi-value" id="busuanzi_value_site_pv"&gt;&lt;/span&gt; &#123;&#123; theme.busuanzi_count.site_pv_footer &#125;&#125; &lt;/span&gt; &lt;/span&gt; &#123;% endif %&#125;&lt;/div&gt;&#123;% endif %&#125; /themes/next/source/css/_common/components/third-party/busuanzi-counter.styl 关于分隔符号的内容不变 4.6 展示豆瓣读书与电影如果想在博客中展示自己在豆瓣上的读书、电影、游戏等的信息，可以安装插件 hexo-douban，具体方法可以参考该插件的 GitHub 页面。 4.7 自动备份博客源文件（未采用）具体方法可以完全按照以下两篇文章操作： 备份Hexo博客源文件 - Doublemine 自动备份Hexo博客源文件 - Doublemine 我目前没有采用这种备份同步方式，而是选择了用 Travis CI 持续集成进行自动处理，具体方法可以查看 Hexo遇上Travis-CI：可能是最通俗易懂的自动发布博客图文教程。 5. 有待处理的改进 实现 Google 、百度对博客的收录：Google 已全部收录；百度收录了博客首页，因站长平台注册需实名并验证手机号，放弃主动提交 合并标签、分类、归档，例如 persilee’s Blog： 修改 /themes/next/layout/archive.swig 本地预览时，不要每次都抓取豆瓣：新版插件已修复 豆瓣页面无法加载 busuanzi ：新版插件已修复]]></content>
+      <categories>
+        <category>建站记录</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[非程序员的个人主页与博客搭建记录（上篇）]]></title>
+    <url>%2Fposts%2F94775632%2F</url>
+    <content type="text"><![CDATA[最近把 个人主页 与 博客 都重新设计了，所以就打算写个总结，自己记录一下一些细节。计划分上、下两篇，上篇介绍域名与解析、个人主页设计等内容，下篇介绍博客的搭建与个性化修改。 虽然自认为不会有几个访客，但还是进行了相应的区别定位。个人主页主要是展现个人的简历、研究项目等内容，主要是个人展示目的；博客偏向于个性化一些，主要想进行一些生活日常或者研究过程等记录，也可以展现一些自己的兴趣爱好之类的东西。 目前的个人主页与博客都放在了 GitHub Pages 上面，个人主页是基于 Bootstrap Freelancer 进行的魔改；而博客则是基于被广泛采用的 Hexo NexT 主题，并做了少量的修改。因为不是程序员，所以很多的处理可能不算是那么专业，但是基本上达到了个人的需求。 注意： 本文是建立在已经会使用 GitHub 网页或者 GitHub Desktop 客户端进行 create repository 与 commit ，以及初始化 GitHub Pages 等基本操作基础之上的。参考：如何在 GitHub 建立个人主页和项目演示页面。 提示： 本文的所有操作均基于 macOS High Sierra 系统，以 Sublime 为编辑器，并使用GitHub Desktop 客户端或者 macOS Terminal 对我的 repository 进行 commit 操作。 1. 域名与解析域名最开始是在 Godaddy 上买的，后来因为 Godaddy 没有免费的域名隐私保护功能，域名一购买就会收到大量的垃圾广告邮件，所以就转到了 NameSilo 上。购买到合适的域名之后，就需要把网站通过 DNS 解析到对应的域名上，我的网站 DNS 解析由 Cloudflare 提供。当然我们也可以选择阿里云、腾讯云等中国本土的云计算服务商提供的免费云解析服务，这样一定程度上可以加快中国大陆访问时候的解析速度，但是值得注意的是我们需要先对账号进行实名认证（域名无须备案）。 1.1 DNS 解析解析的设置很简单，首先在 GitHub 相应的 repository 根目录中上传一个没有任何后缀名的 CNAME 文件，并在其中填入一行域名。这个域名可以是根域名，也可是一个二级域名，但是不需要有 http:// 或者 https:// 这样的前缀。例如，我在个人主页项目中的 CNAME 是根域名： 1dongleizhang.com 而在博客项目中的 CNAME 是一个二级域名： 1blog.dongleizhang.com 在 repository 根目录中正确放置好 CNAME 文件后，去 Cloudflare 设置 DNS 解析。 根据 GitHub 提供的 ip 地址，设置四条 A 记录，并设置两条 CNAME 记录。这里 A 记录的 Name 是根域名，指向四个 GitHub 提供的 ip 地址，这样直接采用 dongleizhang.com 就可以访问站点。同时，增加一条 Name 为 www 的 CNAME 记录，value 是 GitHub 个人主页项目的名称 [github-username].github.io，这样访问 www.dongleizhang.com 将会被指向根域名 dongleizhang.com；另外添加一条 value 为 blog 的 CNAME 记录，这样建立在 GitHub 中 repository 名称为 blog 的博客页面就可以通过二级域名 blog.dongleizhang.com 进行访问。 事实上，设置后还可以通过 [github-username].github.io 访问个人主页，通过 [github-username].github.io/blog 或者 dongleizhang.com/blog 访问博客页面。 提示： 这里我没有把 Status 设为橙色的云朵，即不需要令所有的访问通过 Cloudflare 进行强制 HTTPS，我直接采用了 GitHub Pages 提供的强制 HTTPS 服务，由 Let’s Encrypt 颁发免费 SSL 证书。 设置好 DNS 解析后，还需要在域名注册商处把域名指向解析服务器才可以正常访问。在域名注册商 NameSilo 的管理界面（Domain Manager）选择自己的域名，点击 Change Nameservers，填入 Cloudflare 提供的两个 NameServer 地址：noel.ns.cloudflare.com 和 sandy.ns.cloudflare.com。正确设置好以后，通常需要 24 小时的时间实现全球解析生效，因此可能要耐心等待。 1.2 开启强制 HTTPS现在越来越多网站开始采用 HTTPS，特别是在用 Chrome 访问时可以在地址栏看到一把小绿锁，看起来就显得高大上；而且采用 HTTPS 可以使得浏览数据更加安全，并防止网络运营商对网页进行劫持和插入广告。由于 GitHub Pages 已经于 2018 年 5 月开始支持为自定义域名开启强制 HTTPS，所以在设置上十分简单。只需要在 repository 的页面点击 Settings，在 GitHub Pages 下面把 Enforce HTTPS 打勾即可。 如果提示 DNS 配置有误而无法开启，可能需要回去检查上述设置是否正确；如果提示因为证书正在颁发还未能开启，可能需要等待至多 24 小时的时间。如果在处理完毕上述的几种情况后依然出现无法给 Enforce HTTPS 打勾的情况，可以 写信联络 GitHub，说明具体情况，通常会在很短时间内给予答复和解决。 2. 个人主页的魔改个人主页因为基于最初的模板已经更动很大了，比如增加了一些功能，也删减了部分我不需要的功能，堪称「魔改」。所以已经无法一一还原修改的细节，只能列举几点。需要参考我的主页设计进行「二次魔改」直接去 fork 我的 repository，然后修改对应的 .html 文件就好。 目前个人主页的结构是首页（landing page）与 404 页放置于根目录，其他三个子页面（about、research、misc）以及其中的文件等均分别放置于二级目录中，各个网页之间的链接均是相对路径的形式。图片、css、js 等文件均分别放置于根目录下的 images、css、js 三个文件夹中。 2.1 中文字体的优化原始的主题没有加入中文字体，一开始我在 macOS 上修改的时候并没有发现问题（大概因为都自动显示为默认苹方字体了），但是在 Windows 系统上就很容易发现所有的中文汉字都变成了宋体，这对于一个强迫症而言是绝对不能忍的。于是，我把 freelancer.css 里面所有的 font-family 都添加上了微软雅黑等字体，这样就变成了： 1font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif; 2.2 设置 favicon在浏览网页时候可以关注到在标签栏、地址栏或者网页收藏夹可以看到网页的 logo 图标，要让自己的网站也能显示这样的效果，就需要进行相关的配置，而且要根据不同的设备进行不同的设置。 只需要使用 RealFaviconGenerator 网页，把自己的图标图片上传，根据提示对不同的设备进行设置，就可以自动生成一个 favicon 图标压缩包和配置代码。下载并解压图标压缩包放到网站相应图片目录，然后把下载图标页面中提供的代码放在每个 .html 文件的 &lt;/head&gt; 之前（注意链接路径要与实际图标路径一致）。 12345678910&lt;!-- Favicon Set --&gt;&lt;link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png"&gt;&lt;link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png"&gt;&lt;link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"&gt;&lt;link rel="manifest" href="/img/icons/site.webmanifest"&gt;&lt;link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg" color="#4272c5"&gt;&lt;link rel="shortcut icon" href="/img/icons/favicon.ico"&gt;&lt;meta name="msapplication-TileColor" content="#2b5797"&gt;&lt;meta name="msapplication-config" content="/img/icons/browserconfig.xml"&gt;&lt;meta name="theme-color" content="#4272c5"&gt; 2.3 移动端的简易适配虽然网站模板已经为移动端浏览就行了适配，但是有些网页内容依然需要进一步的适配，使得手机用户也能够浏览排版合适的网页。举一个例子，在设置首页（landing page）的背景图片时候注意到，图片无法在小屏幕上适应性缩小，看起来不是很好看。这里采用一个判断语句，使得网页在移动端和非移动端显示不一样的排版布局。其中 if 的条件如果成立，表示设备不是移动端，执行后面的语句，否则执行 else 后面的语句以适配移动端的浏览环境。 12345678&lt;script type="text/javascript"&gt; if (!(navigator.userAgent.match(/(iPhone|iPad|iPod|Android|BlackBerry|Windows Phone|webOS)/i))) &#123; document.write('&lt;style&gt;body &#123;background: url("/img/background.jpg") no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;background-position: 0px -5px;-o-background-size: cover;&#125;&lt;/style&gt;'); &#125; else&#123; document.write('&lt;style&gt;body &#123;background: no-repeat center center fixed;background-color: #000;&#125;&lt;/style&gt;&lt;img src="/img/background.jpg" alt="background" align="center" style="width: 100%; height: 100%" vspace="50"&gt;'); &#125;&lt;/script&gt; 2.4 本地调试在修改调整的网页过程中，不可能每次都更新到 GitHub 上面，然后查看实际效果。所以，这里利用 macOS 自带的 Apache 服务器，就可以在本地预览修改效果。 在终端 Terminal 中输入以下的第一行命令，然后输入系统密码（输入时不会显示输入状态）按下回车键 return，就可以启动 Apache 服务器。在浏览器中输入 localhost 即可看到 “It works!” 的提示。恭喜，Apache 启动成功了，这样把网站文件放到放到 /Library/WebServer/Documents/ 下就行。如果需要停止 Apache 服务器，只需要输入以下的第二行命令即可。 12sudo apachectl start #start Apachesudo apachectl stop #stop Apache 但是有时候觉得把文件放到上述目录不是很方便，那么就需要修改默认部署路径。打开 Finder &gt; Go &gt; Go to Folder...（或者按下组合键 shift + cmd + G），然后输入 /etc/apache2/，在该目录下找到 httpd.conf，使用编辑器打开。找到以下两条命令： 123DocumentRoot &quot;/Library/WebServer/Documents&quot;&lt;Directory &quot;/Library/WebServer/Documents&quot;&gt; 在两句命令前面均加上 # 将其注释掉，然后加入两条相似的命令，命令中将路径改为自定义的目录并保存。保存后需要重新启动 Apache 服务器，在终端 Terminal 中输入以下命令： 1sudo apachectl restart #restart Apache 如果修改部署路径后，发现浏览器提示没有权限获取，可以检查一下自定义部署路径文件夹及其上级文件夹对于 everyone 用户是否是 No Access 的权限（右键文件夹，点击 Get Info 查看），只需改成 Read Only 的权限后再次尝试即可。]]></content>
+      <categories>
+        <category>建站记录</category>
+      </categories>
+      <tags>
+        <tag>homepage</tag>
+        <tag>domain</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[如何看待浙大经院与哥伦比亚大学金工和运筹联合培养]]></title>
+    <url>%2Fposts%2Fafcde45e%2F</url>
+    <content type="text"><![CDATA[知乎回答链接 当然是要恭喜恭喜了！ 大三本经济系校友一枚，不过在香港不在美帝。当年我们毕业时候好像就帝国理工的硕士联合培养，后来有了图卢兹的的联合培养硕士项目，现在又有了哥大的项目，看来现在的国际化进程越来越快了嗯，是不是可以感慨一下毕业早了？（误！ 就我现在所在的学校看，与学校签订协议，面向本科毕业生的国际顶尖学校研究生培养项目相当多，而且很多会提供相应奖学金支持，让人看了煞是羡慕。当年我们大三本也有这么多合作项目、交流项目就好了。 总体上浙大经济学研究虽然在国内不是位居前列，但是本科生生源和教学培养还是比较不错的，特别是我们经济学专业的本科教育（嗯，自夸一下 2333 ）。当年培养方案上，经济学本科是要必修高级微观和高级宏观的，还要修动态最优化的课程，计量上到中级程度，数学课和本校工科是一个标准，在国内经济学本科教育上也算是比较扎实的了。 现在面临的可能是研究生教育还比较薄弱，生源上不是很好，本院学生不太愿意保研留下来，还有就是教师队伍国际化没有像那些比较靠前的经济学院（系）那么好吧。通过这次这种硕士联合培养计划如果能够吸引不错的研究生教育生源，同时进一步引进更好的师资力量，我们大三本经济学院应该就可以跻身国内一流了。]]></content>
+      <categories>
+        <category>碎碎念</category>
+      </categories>
+      <tags>
+        <tag>ZJU</tag>
+        <tag>知乎</tag>
+        <tag>economics</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[如何评价南京大学社会学院院长、长江学者周晓虹加盟浙江大学]]></title>
+    <url>%2Fposts%2F1491119%2F</url>
+    <content type="text"><![CDATA[知乎回答链接 看到南大，又涉及浙大社会学系，颇有感触。挖一个南大院长算什么，毕竟浙大社会学系都能把自己学校的经济系主任也挖走，只能说一句「社会！社会！」 利益相关：浙大经济学专业校友。 南京大学说实话在我们浙江文科生眼中一直是高于浙大的存在，当年高考没考好，清北复旦人大去不了，一度还考虑了南大，然而贵校分数线依然很高导致没敢报。因此，时至今日，南大文科基础在我眼中依然是比浙大更好的。「考败来浙」，就像很多浙江考生的选择一样。然后，进了浙大社科大类。 按惯例，入学第一学年的春夏学期会进行主修专业预确认。选择前安排了一场大型的宣讲会，社科大类的各个学院教授在紫金港小剧场给我们介绍了相关专业的情况。我们经院介绍时可以看出老师们的那份热情和自信，然而轮到公共管理学院的社会学时，老师上来直接说了他们系比较小什么的一些话，总体来看透着几分无奈和尴尬，但的确不失对学生的热情和欢迎，当时令我印象深刻，以致现在想来也是记忆犹新。那是2012年的春夏，五年半前。五年多来，社会学有了赵鼎新，现在又有了周晓虹，可以说实力大增。哦，最近还挖走了隔壁经济学系的曹正汉教授。（社会学系表示：不是开玩笑的，我厉害起来，自己学校的人都敢挖！） 浙大的文科（人文社科）主要是杭州大学的基础，四校合并以来其实一直对文科投入不足，校友师生对此其实都颇有微词。人文社科优秀本科生选择国内深造的话，很多是选择了外校，没能像他们工科那样给本校学生较大吸引力。然而近年来，也可以看出母校对文科发展不断给予的重视（虽然近年浙大也有很多文科教授跳槽去了其他高校）。 2012 年 9 月的这份文件可以看出浙大对文科发展的规划—— 中共浙江大学委员会 浙江大学关于进一步繁荣发展哲学社会科学的意见 。文件里希望用两个五年，把浙大文科建好建强的决心当年看看也许没有什么特别的，毕竟口号谁都会喊，落实才是关键。学校每年都会举办「文科大会」，虽然前几年也办，但是感觉这几年办得越来越隆重。2012 年的大会来了教育部副部长并发布了上述文件，2013 年决定设立等同院士待遇的「文科资深教授」荣誉，2014 年开始评选学生人文社会科学研究优秀成果奖，乃至赵鼎新教授加盟社会学，最近又从南大挖来了许钧教授全职授课等等。 所以近日看到周晓虹教授加盟浙大，可以说是既惊喜又是情理之中。话说我们经济学院什么时候可以像隔壁管理学院一样有钱，也可以去挖几个大牛来呢？嗯，值得期待！]]></content>
+      <categories>
+        <category>碎碎念</category>
+      </categories>
+      <tags>
+        <tag>ZJU</tag>
+        <tag>知乎</tag>
+        <tag>文科</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[上手无人机 体验一把飞行的乐趣]]></title>
+    <url>%2Fposts%2Facb197c%2F</url>
+    <content type="text"><![CDATA[说起无人机，班班可是种草了整整一年了。自从去年双十一看到新发布的小米无人机就开始种草，到最近趁着「黑五」终于剁手下单了一架无人机（虽然不是小米的）。 当时看着小米无人机，确实是便宜。但是看到发布会直播中云台装不牢掉下来，加上起飞不久就炸机，看得我是真心不敢买啊。相比较，大疆里差不多价位的有精灵3 SE，然而体积实在有点大，不想要；而体积小、便携的比如御 Marvic Pro ，又太贵。就这样看了一圈，科技测评节目也看了不少，却依旧没有剁手下单。 今年五月，大疆推出了一款无人机「晓Spark」，一看这名字就知道体积很小了，而且价格也还不错。仔细研究了一下功能，感觉挺适合我这种新手玩家的，小巧、安全、容易上手。这不上个月底刚好大疆香港官网在黑五优惠嘛，买套装可以便宜 700 港币，加上九折的教育优惠，就愉快地剁手买买买了。这也算是给我自己 11 月生日的礼物吧，哈哈哈。 无人机很快就寄来了，下单次日上午 DHL 从深圳就送来我办公室了，速度很快。下面算是不完整开箱图吧。 下面是带着无人机在中文大学的大学体育中心体育场首飞的画面，因为是由 DJI Go 直接自动生成的，不是原片剪辑，分辨率可能不是很好。 下面是生日当天和办公室小伙伴去建筑学院平台上拍的吐露港和我们商学院大楼的视频，同样由 DJI Go 直接自动生成的，不是原片剪辑。 拍完上面这个视频后我们就去刚才画面中出现过的那个体育场（崇基书院体育场）附近拍了一会儿，DJI Go 自动生成的小视频感觉还挺不错的。]]></content>
+      <categories>
+        <category>碎碎念</category>
+      </categories>
+      <tags>
+        <tag>CUHK</tag>
+        <tag>无人机</tag>
+        <tag>大疆</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[期末阅卷有感]]></title>
+    <url>%2Fposts%2F49b5bde%2F</url>
+    <content type="text"><![CDATA[嗯，前几天在改本学期本科生统计学期末考试卷，总体成绩不佳，最终的平均分、中位数都很低。虽说一年多来已经改了几次本科生期中期末卷见怪不怪了，但在改卷时依然会不时吐槽学生的答卷情况。 由于是商学院本科生试卷，所以老师出得也很偏向于应用，但是学生答卷依然错误颇多，情况不理想。改完试卷统计了一下，有一道 4 分但不算是很难的题目两个班 83 份试卷，只有两个学生全对…… 再比如一道题目给了数据表，要求画一个二维坐标的 scatter plot（Sales-Clients），结果有两个学生居然把数据的序号（下图中的 Broker ）也当做一个维度，画了个 3D 的图，还很精美，实在佩服佩服。 还有的学生呢，胆子大到直接篡改试卷题目。题目里给出了两组数据，类似：$$x_1=6.8, n_1=40; x_2=7, n_2=44$$ 然后，学生在下面答题时候式子的下标 1 和 2 写反了，他居然不是想着改一下自己答案的下标，而是直接去把试卷题目里的下标改掉了，改……掉……了…… 我是第一次见到这样敢直接篡改试卷题目的孩子，够机智，十分佩服，然后我就把他分数扣了。 虽然考前和考试时候已经提醒了选择题答题卡涂卡注意事项，但是还是会发生这样或那样的情况也是有点心累。有的会忘记涂班级号，有的没带铅笔直接用水笔涂卡，错了就用修正带涂掉或者用叉叉划掉，导致机器阅卷时候在读这道题直接报错。 本次考试排名末尾的低分段里也发现了好几位内地学生。虽然近年来港就读本科课程的学生已经不如当年状元级别，但也应是很优秀的高中毕业生，现在一门基础的二年级应用统计学课程只考了二十几分，不得不令人唏嘘。其中有一位学生上学年的一门经济学基础课我正好也担任了助教，印象中该生那门课程的成绩也是排名末尾，只拿了十几二十几分。想说，在参加各种校园活动、提升自己人际交往能力和职业素养的时候，可能这些学生还是应该再关注一下自己的专业技能和知识的学习掌握。]]></content>
+      <categories>
+        <category>碎碎念</category>
+      </categories>
+      <tags>
+        <tag>CUHK</tag>
+        <tag>exam</tag>
+        <tag>TA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[国内的研究生博士生的收入状况是怎样的]]></title>
+    <url>%2Fposts%2F71f477a2%2F</url>
+    <content type="text"><![CDATA[知乎回答链接 问的是「国内」研究生博士生收入状况，那我这种在祖国不可分割的一部分某高校（香港中文大学）的博士生就来向大家汇报一下好了。 经常性的固定收入与奖学金方面 第一种，授课式硕士研究生（ MSc / MA 类，一年制）与授课式法律博士（ JD ，好像是两年制），这类项目定位上很像内地高校的「专业硕士」（专硕）：需要自己交学费（从十几万港币到三四十万港币一年不等）。没有每月定期发放的奖学金，个别项目可能会由系里面给一些学业成绩优秀的学生办法一次奖学金，金额在几千到一两万不等。当然还有一部分是给优秀学生的入学奖学金，这个基本上不会发放现金，通常是以减免学费的形式发放。还有一些项目，比如 HKUST 的经济学 MSc ，会有一个可选的延长半年学制以供学生准备申请PhD做一些科研训练准备，这时候系里面会给予减免学费和提供生活费的资助。 第二种，授课式硕士研究生（ MBA ）：这个大家应该比较熟悉了，就是给各位大佬们准备的，学费不菲，学生的收入么自然也是很高的（当然不是学校或者政府发放的啦）。 第三种，研究式硕士研究生（ MPhil ，两年制）与哲学博士（ PhD ，三年制或四年制）： 这两类的待遇基本上是一样的，按照入学时候 Offer 写明的年限按月发放 Studentship（免税发 12 个月），2016/17 学年是 15600 港币/月，2017/18 学年是 16620 港币/月，获得 HKPFS（港府奖学金）的博士生可以获得 20000 港币/月。 学费需要自己交，和本地本科生的学费一致，42100 港币一学年，相当于 3500 港币/月。与上述项目不同的是，这两类项目中大学资助委员会 UGC 资助下的学校会提供宿舍（宿费按照房间规格不同，每月收取一千多至三千多不等），宿舍安排有抽签制（只有抽中的才可以在正常学制内住宿舍，如 CUHK ）、限定住宿年限制（非本地新生可以保证宿位，但是只提供前两年的宿位，比如 HKUST ）、面试审核结合限定住宿年限制（根据申请者的申请材料以及其对于该宿舍活动的贡献能力进行表刷和面试审核，获得宿舍的可以提供两三年的宿舍，但好像还要逐年复核，比如港岛某著名「坑U」）等几种形式。如果一些导师因为名额问题，用自己的经费给学生发奖学金而非 UGC 资助的，那么就不会由学校提供宿舍。 兼职收入方面 由于港府入境处的政策是非本地学生不得在课程修读期间于香港全职、兼职工作，除非是在暑假由学校批准可以在香港实习，或者是平时于校内以 student helper 的形式兼职。在这种情况下，要想有额外收入，渠道有： 在香港实习或者兼职，并以现金的方式取得兼职收入以规避政府监管。这类收入属于灰色收入（实际违法的），工作没有法律保障，也存在被查到然后被取消入境许可的风险。 去内地企业单位实习（以前述的第一类学生为主），获得人民币收入。 在校内以 student helper 的形式兼职（本校的标准是55港币/小时，每周上限 17.5 小时），主要是给老师当 part-time research assistant ，这也是符合香港法律规定的收入，并且 2017/18 学年开始我们学校还会根据这一收入为我们相应缴纳强积金。我在 HKUST 读 MSc 期间就曾以这种形式给一位老师做了几个月的 RA ，现在给我的导师自己的项目处理数据什么的也是以这种形式获得导师发放的报酬。]]></content>
+      <categories>
+        <category>碎碎念</category>
+      </categories>
+      <tags>
+        <tag>知乎</tag>
+        <tag>PhD</tag>
+        <tag>scholarship</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[如何评价《极限挑战》第三季第十期]]></title>
+    <url>%2Fposts%2F172ff841%2F</url>
+    <content type="text"><![CDATA[知乎回答链接 感觉很少有中国综艺节目能吸引我的眼球的，之前暑期回家陪老妈看了好多电视台的综艺节目，感觉都是一个游戏接一个游戏，没有很好的过渡，好像就是纯粹的玩游戏而其中的剧情什么的就是鸡肋班的存在。其中做的还不错的，我觉得第一当属《极限挑战》，其次的话《全员加速中》最开始那几期也很不错，《极速前进》前几季也做得挺好（可惜最近这季做得太烂了）。自从《极限挑战》前几个月停播就不怎么关注综艺节目了，于是每天只好上油管看湾湾的「政论娱乐」节目。 4号晚上无意中在优酷看到了《极限挑战》第三季第十期，简直是期待已久。熬夜看了这一期，再刷了一遍知乎上的回答之后来写个答案。这一期讲的是八十年代那辈人的故事，算是《极限挑战》经典三个系列（人生路、继承者、暗系列）之一的作品了。按理说我这种 90 后是不会有太大感触的，但是节目里的很多情节却让我想到了父母口中的那个八九十年代。可以说很少有这样的综艺真人秀节目可以让我有这样的感触了，可能类似的感触只有在看纪录片时候才会有吧。很多回答都说《极限挑战》算是国内综艺节目最高水准了，我个人觉得这样的评价不为过。不是很清楚之前停播的原因，但是我不希望是因为所谓的「广电总局认为该节目正能量不足」。 下面具体谈谈这期节目的内容。 这一期开始是讲恋爱，朦胧诗配对，也是很有时代特色了。这其中有一个细节，张艺兴现在都开始学精了，抢着往里走。三季看下来，本来对韩国模式造就的明星没什么好感的我对张艺兴也印象渐渐好了起来。节目中唱唱歌读读诗的那种恋爱让我想起爸妈曾经提起的经历（那时候要算九十年代初了）。当年我们县城里就一个公园可以逛，他们就经常去那里约会，偶尔会去电影院看场电影（好像他们后来就再没怎么去过电影院，现在他们在家享受着网络电视点播哪还愿意去电影院啊），可以说当年我老家那里的文化娱乐活动还是很单一的。 后来讲到了工厂招工和应聘，感觉节目组的安排就是寓历史于游戏的成功样板。最开始的过独木桥拿粮票感觉很像是说当时的「千军万马抢铁饭碗」，那个盖粮票得饭碗设计得很细致啊。 后来他们骑着车唱起《年轻的朋友来相会》满满的年代感啊，当然最好玩的要数张艺兴居然不会停自行车了。我这个在大学骑了四年自行车的 90 后表示，可以很熟练的停这种自行车，哈哈哈。说起《年轻的朋友来相会》，节目里唱的是「光荣属于八十年代的新一辈」，其实这首歌在 2009 年国庆联欢晚会时候也被唱过，不过里面的这句歌词改成了「光荣属于跨世纪的新一辈「，也是很有趣的一个改动。 在炒菜的时候放了舌尖 BGM ，加上一道道美味可口的菜，表示大半夜真不能看这个节目啊。我这个忍受了香港某校饭堂单调伙食苦逼老博表示时候去一波深圳改善伙食了（真怀念我浙 zjg 和 yq 的食堂～）！后来他们没干多久就被宣布要下岗了，那段拿工厂产品的画面里张艺兴也许是年纪轻无法有那种感受所以拿着摄像机各种玩，而孙红雷正在拿着绳子串杯子。节目里这种差异的对比也是很棒的展现，很真实地体现了不同年龄段人群对那个年代国企改制和工人下岗的理解。 说到这个，我想到我妈也算是国企下岗工人了。1994 年初，她刚休完产假回到工作岗位没多久工厂就改制关门了，于是她就下岗了。后来，家里曾经开过小餐馆，也在家附近的小学门口开过一个小卖部，现在家里还放着好多当年开小卖部时候的库存练习簿文具什么的。听爸妈讲述可能无法理解当时的艰辛，但是现在看到黄磊背那两大麻袋的搪瓷夜壶的画面就一下子懂了，也对知乎上前段时间讨论的下岗职工问题有了更深的理解与感受。 说到后来的借钱，我感觉节目里的助演水平相当高啊。这一段很像央视的《谢天谢地你来了》里的安排，整个情节的推进不仅仅需要主演（嘉宾）的临场反应能力和表演能力，还给助演提出了很高的要求。可以看出，《极限挑战》里面嘉宾们都临场反应都很不错，不愧为老戏骨（张艺兴这方面就还要加强了），而且无论是那些扮演妻子的还是扮演子女的演员，都很厉害。扮演黄磊妻子的演员那段见到王迅后态度大转变的表情十分传神，可以说和之前宋丹丹在《演员的诞生》里表现失忆母亲在婚礼上态度转变的戏有异曲同工之妙。而扮演孙红雷妻子的那个女演员，真的是把自己融入进了那个角色里。单独看那段事情解决后孙红雷与她的单独谈话，完全不会觉得这是一个真人秀综艺节目，反而更像是电视剧里的情节。 其实很多家庭应该都有过那种物质条件不是很好但是又有面临各种需求的经历吧。说一件和这个节目情节不是很相关，但是我看节目时候想到的事情。还记得 2000 年我国的第一个五一黄金周假期，爸妈也随大流想带我出去旅游，那大概算是我第一次出远门了，去省城杭州成为了当时的最佳选择。那时候，家里刚买了新房，装修还是把老房子以较低价卖了才完成的。忘记了以什么交通工具去的杭州，记得最深的是当晚在杭州找地方住。那个时候没有像现在这样方便可以用飞猪、携程、去哪儿什么的 APP 提前预定，也没有电话预定这种想法，结果到了晚上转遍大半个杭州城都没有找到住的地方。也不是没有，当时老爸听说xx饭店（好像是蛮高级的一家）是我们老乡投资的，那时候好像是说凭我们的老家签发的身份证可以给打折，于是我们就过去了。结果自然是没有入住，打折后的价格还是很贵根本不是我们可以住得起的。于是我们只能接着转，而当时的我还很小，小学一年级吧，担心晚上没得睡吵着要睡觉了，感觉是把爸妈给愁坏了。后来啊，终于找到了一家家庭旅馆性质的旅店，那晚我是睡得很香没什么印象了，但是据我妈说旅店房间洗浴还是公用的，卫生条件其实也不是很好，他们睡得并不好。 最后那段黄渤和小女孩在桥上的对话也是很棒。女孩问黄渤「你也会停吗」，黄渤答道「我肯定是在你前面停下的，你们继续往下走，因为我们的年龄肯定没有你们的长」，他刚答完就被导演喊「停」。字幕打出来」我告诉你过去的体验，你替我去看未来的风景」，所以你告诉我这样的画面是一档普通的综艺真人秀会有的吗？其他的综艺节目有这样的主旨升华吗？显然是没有的，最多是那种硬拗你一段所谓的主题和鸡汤，远远没有《极限挑战》那样的安排来得自然。这就是为什么《极限挑战》被称为目前国内最佳综艺节目的原因吧，可以堪称是一档各年龄层都喜闻乐见的国民综艺了。]]></content>
+      <categories>
+        <category>碎碎念</category>
+      </categories>
+      <tags>
+        <tag>知乎</tag>
+        <tag>综艺</tag>
+        <tag>极限挑战</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[一万港币买了 16 个软件]]></title>
+    <url>%2Fposts%2F8274cb82%2F</url>
+    <content type="text"><![CDATA[标题里说的这一万块港币怎么来的呢？当然不会是我突然土豪起来了，然后表示要「资瓷正版，从我做起」！真实情况是，我们「高（土）贵（豪）」的商学院从今年开始，给每个 research postgraduate（研究式项目研究生）一万元港币用于购买软件（当然是学术用途啊，不能买！游！戏！），而且限期在第一学年要花完。 然后，眼看着第一学年快结束了，一个软件也没买，小秘都发了好几次邮件催我们抓紧买买买！！既然「花钱压力」这么大，最近就和办公室的小伙伴讨论了一下买哪些软件。经过「几个星期」的研究，上星期一下子买了 16 个软件，感觉棒棒的，哈哈哈～ 所以，今天就让我来介绍一下最近买的这 16 个软件吧。 1&amp;2. Mathematica + WolframAlpha iOSMathematica 是一款相当强大的数学计算软件了，解个方程、求个导，还有什么矩阵的特征值和逆，画个函数图像之类的，轻轻松松。Wolfram 公司也有一个与之功能类似的小型软件，叫 WolframAlpha ，有免费的网页版，也有 iOS 的 App。Mathematica 学生版售价：USD 150.00；WolframAlpha iOS 售价：CNY 18.00 （另外提供图片输入功能的内购，CNY 6.00）。 3. Stata SE一款经济学科研领域常用的计量软件，Stata SE 学生版售价 USD 395.00。 4. Sublime Text一款码农们很喜欢的代码编辑器了，提供免费不限时的评估版本，售价 USD 70.00（买这个软件有一种充值信仰的感觉）。 5. MATLAB大名鼎鼎的 MATLAB 似乎不用特别介绍了吧，学生版本体售价 USD 55.00，另外其他的 Toolbox 每个 USD 6.00（我买了 13 个）。 6. Acrobat Pro DCAdobe 家的 PDF 编辑与阅读软件，学生与教师版售价 HKD 1036.38。 7. EndNote X8一款优秀的文献管理软件，付费后提供无限量的文献在线存储服务；iPad 版本免费，还可以对文档进行手写批注，似乎和 iPad Pro 与 Pencil 搭配食用口感更佳。学生版售价 USD 113.95。 8. ABBYY FineReader被人安利的一款 OCR 软件，据说对中文的支持度很好，可以秒杀辣鸡 CAJviewer 的 OCR 功能，macOS 版本 App Store 售价 CNY 798.00。 9. Paragon NTFS for Mac这个似乎不需要截图了，这款软件可以让 macOS 电脑读取 NTFS 文件系统的可移动设备，搞了一个优惠码之后售价 HKD 135.60。 10. Affinity PhotomacOS 系统上据说可以比肩 PS 的软件（为什么不买 PS ，因为 PS 现在变成订阅版了，而且很贵啊买不起），App Store售价CNY 328.00。 11&amp;12. Notability、GoodNotes iOS/macOS两款很著名的手写笔记软件，Notability 的特色是可以在笔记里添加录音，GoodNotes 的特色是可以对手写笔记内容（英文）进行 OCR 识别搜索。前者的 iOS 和 macOS 版本 App Store 售价均为 CNY 68.00；后者两个版本售价均为 CNY 50.00。 13. TexpadmacOS 平台上炒鸡好用的 LaTex 编辑器，比 TexStudio 好一万倍！因为可以实时编译、PDF 与编辑框可以同步上下滚动、编译完以后不产生一堆垃圾日志文件。似乎这个软件已经放弃在 App Store 更新了，官网有最新版，售价 USD 24.99。 14. DetexifymacOS 上可以手写识别数学符号并转为 Tex 代码的小程序，也有免费在线版本（Detexify LaTeX handwritten symbol recognition），macOS App 售价 EUR 8.00。 15. MoommacOS 上窗口管理实在不方便，这款 Moom 可以很方便让我们调整窗口的布局和大小，App Store 售价 CNY 68.00。 16. 欧路词典最后出场的是本次购买中的唯一一款国产软件——欧路词典！优秀国产软件本来就少，学术类的话就更少了。欧路词典支持导入自己的词典文件，同时支持 Windows 和 macOS 系统，售价 CNY 98.00。]]></content>
+      <categories>
+        <category>札记</category>
+      </categories>
+      <tags>
+        <tag>research</tag>
+        <tag>software</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[在浙大你学到的最重要的东西是什么]]></title>
+    <url>%2Fposts%2F88ca8c7e%2F</url>
+    <content type="text"><![CDATA[知乎回答链接 在浙大学到的，其一是校训「求是」。六年前，进入浙大时候大概我就是属于「考败来浙」的那一批人，所以大概我一开始对浙大是没什么感觉的。但是我依然记得开学第一课参观浙大校史馆对我的震撼。在那里，我第一次感受到了浙大从1897年求是书院建立以来的风风雨雨。特别是抗战期间举校西迁，烽火硝烟中的浙大人对知识的渴望和对国家的热爱深深影响了我。这大概是浙大第一次对我的影响，也是我第一次从浙大学到的东西。无曰已是，无曰遂真，无论是做人的踏实，还是科研学术的严谨，都是浙大的校史、师长、同学带给我潜移默化的影响。而求是的精神化为对母校的深深凝聚力则是这次 120 校庆里，校友们给我的另一种震撼。 其二是对自己负责，学会选择。有文有质，有农有工。浙大对学生的管理几乎是放养式的，你需要去探索适合自己的那条路。在第一年要选择确认自己的专业；所有的选修课、必修课都要自己选择与排时间，你可以跨院系选课也可以跨年级选课；宿舍晚上不会封楼，回来再晚只需要刷一下校园卡就可以进门；平衡参与丰富的校园活动与学习之间的关系……可以说这些对于刚刚离开寄宿制高中的我来说是既茫然又跃跃欲试，固然曾经走过一些弯路，但是在一点点的探索中，我认识了自己也学会了对自己负责。 其三是自信，相信每个人都可以获得属于自己的那份成功。无论是科研学术，还是创新创业；无论是刷 GPA 申请留学，还是实习求职；无论是学生工作，还是社会公益…… 没有固定的所谓成功模式，也没有特定的评价标准，似乎每个人只要努力都可以有自己的那份成功。而这种感受带给一个个浙大人的是一种自信，不论是『我可以』，或者是「我们浙大也可以」。 前几天时值 120 年校庆，返校参加校庆期间，我和一位本科室友讨论是否后悔六年前选择浙江大学，我们的回答都是「不后悔」。]]></content>
+      <categories>
+        <category>碎碎念</category>
+      </categories>
+      <tags>
+        <tag>ZJU</tag>
+        <tag>知乎</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[为什么你会怀念在浙江大学读书的日子]]></title>
+    <url>%2Fposts%2F6ff59771%2F</url>
+    <content type="text"><![CDATA[知乎回答链接 大概是怀念母校的人吧。 毕业后离开母校会发现，当年在我身边的那群人都是那么的优秀，感觉毕业后越来越多的时候需要自己的努力，很难再有这样和同伴一起奋斗的氛围和过程了。很高兴在最美好的时光里可以和这群人一起度过，简直是满满的回忆！ 毕业了还会发现，各行各业都有我浙校友的存在，而且都有很好的成绩，这些都让自己觉得要好好干，毕竟不能给母校丢脸。我依然记得 2011 年夏天，收到红色信封的录取通知书上那句话： 从此，你将与历史上众多灿若星辰的名字一起，分享「浙大人」这个无上光荣的称号，共同承担起国家和社会的责任。 校歌里说到：树我邦国，天下来同。大概「浙大人」这个标签，带给我的不仅仅是那种归属感，还有荣誉感、责任感。这碗鸡汤，我先干了！]]></content>
+      <categories>
+        <category>碎碎念</category>
+      </categories>
+      <tags>
+        <tag>ZJU</tag>
+        <tag>知乎</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Websites for Economic Study & Research]]></title>
+    <url>%2Fposts%2Fceda0f99%2F</url>
+    <content type="text"><![CDATA[Papers and Journals EconPaper IDEAS Top Journals in Economics Forums Economics Job Market Rumors 人大经济论坛 (RUC Econ Forum) HomepagesEcon David Card (UC Berkeley) Teck-Hua HO (NUS) Bronwyn H. Hall (UC Berkeley) OM Marcelo Olivares (Columbia Business School) Gerard P. Cachon (University of Pennsylvania) Jun Li (Michigan Ross) Fuqiang Zhang (Washington University in St. Louis) Online Books A Distant Learning Course on Discrete Choice Methods with Simulation (Train) Handbook of Labor Economics Forecasting: Principles and Practice (Hyndman, Athana­sopou­los) Coding Replication in Economics Review of Economics and Statistics - Harvard Dataverse Learn Python the Hard Way UCLA Stata BLP code Aviv Nevo’s code, modified by Bronwyn Hall and Eric Rasmusen Knittel and Metaxoglou’s code Course Materials UC Berkeley: ECON 250A, Labor Economics Harvard: ECON 2610, Industrial Organization I Online Tools Overleaf - LaTex Online Tex Equation Editor Wolfram Alpha]]></content>
+      <categories>
+        <category>学术</category>
+      </categories>
+      <tags>
+        <tag>economics</tag>
+        <tag>research</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Top Journals in Economics]]></title>
+    <url>%2Fposts%2F40e31eef%2F</url>
+    <content type="text"><![CDATA[The rank of this list is based on SUFE journal list. Top Tier American Economic Review Econometrica Journal of Political Economy Quarterly Journal of Economics Review of Economic Studies First Tier Economic Journal Games and Economic Behavior International Economic Review Journal of Econometrics Journal of Economic Theory Journal of International Economics Journal of Labor Economics Journal of Monetary Economics Journal of Public Economics Journal of the European Economic Association Rand Journal of Economics Review of Economics and Statistics Theoretical Economics Second Tier AEJ：Applied Economics AEJ：Economic Policy AEJ：Macroeconomics AEJ：Microeconomics American Journal of Agricultural Economics AER Papers and Proceedings Brookings Papers on Economic Activity Canadian Journal of Economics Econometric Theory Economic Theory European Economic Review Experimental Economics Journal of Applied Econometrics Journal of Business &amp; Economic Statistics Journal of Comparative Economics Journal of Development Economics Journal of Economic Behavior &amp; Organization Journal of Economic Dynamics &amp; Control Journal of Economic Education Journal of Economic Growth Journal of Economic History Journal of Economic Literature Journal of Economic Perspectives Journal of Economics &amp; Management Strategy Journal of Environmental Economics and Management Journal of Health Economics Journal of Human Resources Journal of Industrial Economics Journal of Law &amp; Economics Journal of Mathematical Economics Journal of Money, Credit and Banking Journal of Population Economics Journal of Real Estate Finance and Economics Journal of Regulatory Economics Journal of Risk and Uncertainty Journal of Urban Economics Macroeconomic Dynamics Review of Economic Dynamics Social Choice and Welfare]]></content>
+      <categories>
+        <category>学术</category>
+      </categories>
+      <tags>
+        <tag>economics</tag>
+        <tag>research</tag>
+        <tag>journal</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[我在台湾过新年]]></title>
+    <url>%2Fposts%2Fab6f5e0a%2F</url>
+    <content type="text"><![CDATA[刚从台湾回来，七天六夜的行程，扣除购物花费，单单算交通（机票、台铁、高铁、捷运、公交与客运）、住宿、吃饭、门票这类花费大概折合RMB3500元左右。这次主要在台北周边还有阿里山玩，下次可以考虑去南台湾和花东：1.1：香港-台北（西门町、宁夏夜市）【住台北】1.2：平溪线-九份【住九份】1.3：台北故宫-士林官邸-中正纪念堂-淡水【住台北】1.4：台北-两蒋陵寝-嘉义【住嘉义】1.5：阿里山-台北101-诚品信义店【住台北】1.6：「总统府」-「国史馆」-「国父纪念馆」-四四南村【住台北】（引号必须要有，哈哈）1.7：台北-香港 入台证与行前（住宿、机票、保险等）： 在港内地学生从香港出发赴台的话不需要办理大通证，只需要大陆护照和入台证就可以了。带上材料去金钟台北经济文化办事处办理入台证，包含回邮费HKD270（一年多次）。我是12月14日去办的，中间经历了圣诞节公共假期，直到28号才收到入台证，平时大约10个工作日可以拿到。 28号收到入台证之后才开始规划行程，对，简直是所走就走（所以找不到同行小伙伴，基本上是一个人玩了7天）。 在Airbnb上订了在台北住宿的地方，约HKD100一晚，住在龙山寺捷运站附近，但是感觉条件不是很好……在去x儿上订了在九份和嘉义的住宿，平均约RMB130一晚。 在x猪上订了机票，因为是提前几天买且是元旦左右，所以偏贵，往返含税和保险费是RMB1024（华航飞机设施不错，但是餐食简直了……）。 在香港恒x银行网站买的旅行保险，七天折后约HKD160。内地保险公司的好多旅行保险产品都是保障内地出发的行程，保障境外出发的产品，在差不多价格情况下没有香港的赔付多。 在台湾高铁网站买了4号桃园到嘉义、5号嘉义到台北的高铁票（早买有早鸟优惠）。 在x宝买了101门票和电话卡。个人感觉电话卡没必要提前买，到机场了可以直接去办，101门票x宝比现场买大概可以便宜二三十人民币。 实用APP推荐：Google map（导航路线全能）、台鐵e訂通（台铁路线和班次）、T-EX行動購（购买台湾高铁票、查询高铁班次）、台灣公車通（台湾各大城市公车班次路线以及到站时间） ———我是分割线——– 第1天：香港-桃园机场-台北车站-入住-西门町-宁夏夜市-诚品敦南店【住台北】2017年第一天起了个大早去机场赶中午的飞机，起早了加上机场大巴开得飞快，变成了香港机场元旦半日游…… 桃园机场入境以后取了x宝买的电话卡，掏出浙江农信储蓄卡这张神卡（全球每天无限笔ATM取现查询无需手续费）在机场有银联标志的ATM取了2000新台币。有钱了就可以去买去台北车站的机场巴士车票啦，坐的是国光客运，车程大约1小时，票价NTD125。在台北车站捷运买了悠游卡，坐捷运去住的地方放好行李就开始了浪浪浪的行程。 第2天：台北万华站-瑞芳火车站-平溪线（菁桐-平溪-十分）-九份【住九份】住的地方遇上一个澳门小哥，刚好要去平溪线，于是就愉快地一起出门啦。去了最近的万华火车站坐火车前往瑞芳。到瑞芳站可以买平溪线一日周游券，当天无限次搭乘平溪、深澳线（票价NTD80）。 美好的旅程总会遇到意外——当天上午火车撞死一个人（so sad），导致全线晚点，时刻表也全乱了。本来中午可以到菁桐，结果到快下午三点才到（anyway，还是建议查好平溪线时刻表出发，毕竟一小时一班火车）。我们选择了先到平溪线终点站菁桐，再一站站回头游玩平溪、十分。Tips时间：如果一小时一班的火车等不及了，可以考虑坐公交车往返各站节省时间（路线可以查Google map）。 从十分回到瑞芳火车站已经是晚上时间了，和澳门小哥在火车站附近的公车站坐公车上九份山上（只要写着前往金瓜石的公车线路均可以到达九份）。在老司机澳门小哥的带领下，在一个绝佳的九份夜景观景台吃到了好吃的芋圆，还吃了迄今为止我觉得最好吃的一碗鲁肉饭（没有之一，澳门小哥本来不准备吃鲁肉饭的，尝了一口我那碗以后马上也要了一碗，哈哈哈）！ 九份的夜晚是安静的，大概八九点钟店铺就纷纷关门歇业了，大概唯一开着的就是711和全家了。山上这么多民宿里住着这么多男男女女，居然没有任何酒吧夜店之类的我也是惊奇（商机啊）。没办法，逛了一圈之后只好回去看电视，还好台湾的电视节目异常丰富，大晚上有新闻、扯淡的政论节目、电影电视剧、夜间call in聊天、电视购物、民间歌手歌唱，甚至还有和尚讲经、基督教传福音、教唱歌…… 第3天：九份-故宫-士林官邸-中正纪念堂-淡水（老街、淡江大学）【住台北】欣赏完九份早上的景色就坐公车下山回台北市区了（有直达公车前往台北市区忠孝复兴）。先去了台北故宫，参观前按要求先寄存了书包，另外强烈建议租一台语音导览器（付租金并押一个证件），可以让你对展品有更深的了解。故宫暴走几个小时以后去了附近的士林官邸，成功以cuhk学生证购得半价优待票。赶在中正纪念堂关门前转了一圈，就乘捷运去淡水了。感觉淡水还是适合看落日，晚上去感觉没什么意思，于是就坐公车去附近的淡江大学参观了。在淡大唯一的感受就是，机车开得太快吓死人了…… 第4天：台北-中坜火车站-两蒋陵寝-中坜火车站-桃园高铁站-嘉义高铁站-入住-文化路夜市【住嘉义】这天一大早就起床出门赶火车去桃园中坜火车站，为的就是在中坜坐9点钟的头班台湾好行慈湖线班车去两蒋陵寝（台湾好行的班次时刻都可以在台湾好行官网查到）。中坜客运站就在中坜火车站（前站）边上，所以还是蛮方便找到的。我还吃到了好久没吃过的糯米饭，一个老爷爷推车在火车站门口卖，很好吃！ 在中坜客运站可以买台湾好行慈湖线一日票，也是一日无限次搭乘这个线路的班车。先在大溪陵寝下车去看了看蒋经国陵寝，结果居然只有我一个人在参观，其他的都是「国军」军官……匆匆看了一眼就沿着边上的游步道往慈湖方向走。大概走约20分钟可以到达慈湖雕像公园，里面都是台湾各地拆掉搬过来的蒋介石、蒋经国、孙中山的塑像，各式各样、形态各异。再往前走就可以到达慈湖陵寝，每个整点会有礼兵交接仪式。 12:30从慈湖陵寝回中坜客运站，台湾好行班车彻底被我一个人包了，几乎全程就我和司机两个人……在中坜吃过午饭就坐14:20的接驳巴士前往桃园高铁站，由于两蒋陵寝参观时间比预计要短，所以提前好久到了高铁站。于是补了早鸟优惠的差价换了一张马上发车前往嘉义的高铁票。 17:43前往嘉义，18:48到达。坐了嘉义BRT从高铁站前往市区（凭高铁票免费），入住了之前预定的「大饭店」……晚饭就在嘉义文化路夜市解决了，个人感觉嘉义城区其实和老家一个中心镇的建设差不多。 第5天：嘉义火车站-阿里山-嘉义高铁站-台北高铁站-101-诚品信义【住台北】早上坐8:40台湾好行阿里山B线从嘉义台铁站附近的客运站上车去阿里山（平日门票NTD150）。在阿里山火车站坐森林小火车先到了沼平站，然后走游步道欣赏风光前往神木站坐火车回阿里山火车站（强烈推荐先去沼平再去神木站，因为沼平高神木低，从沼平去神木是一路下山）。阿里山当天天气特别好，晴空万里，能见度又特别高，风景很棒。 14:40坐台湾好行阿里山A线下山前往嘉义高铁站。又到太早了，默默又补了差价换票提前上车回台北，顺便品尝了一下高铁便当。回到台北时候还早，于是临时决定上101欣赏台北夜景（本来打算第二天去的）。 第6天：「总统府」-「国史馆」（台湾领导人收到的礼物展览）-「国父」纪念馆-四四南村（曾经的眷村）-购物【住台北】这天就是坐捷运参观了以上这些地方。可惜没赶上「总统府」假日开放日，平时可以参观的区域很有限（免费参观，需要入台的证件以及一个台湾的电话号码）。晚饭在台北市政府里的餐厅吃的，一个便当50元，味道不错，于是吃完一个又买了一个…… 第7天：台北车站-桃园机场-香港机场【当然住香港】因为这天没什么行程安排了，又是下午的航班，所以起得很晚。和澳门小哥一起去吃了个午饭，然后就去了台北车站坐机场大巴（可以直接在车站东三门买票上车，那天不知情地去了台北转运站买票，然后又走回头路回台北车站坐机场大巴）。澳门小哥继续他的行程前往台中，我滚回香港迎接新学期的到来（在桃园机场买了手信，成功地花完了手头的新台币现金）。]]></content>
+      <categories>
+        <category>札记</category>
+      </categories>
+      <tags>
+        <tag>travel</tag>
+        <tag>Taiwan</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Crowdfunding and Online Social Capital: A Research Idea]]></title>
+    <url>%2Fposts%2F3b22d99a%2F</url>
+    <content type="text"><![CDATA[1. BackgroundLuo Er raised money for his daughter’s treatment fee through a WeChat media platform account in P2P finance. But people found that Luo actually is not so poor that he can’t afford his daughter’s treatment fee and the Shenzhen medical insurance can also cover part of her treatment fee. In Zhihu, the largest Chinese Q&amp;A online community, when answering a question about people’s opinions toward this case, Katy家怡 mentions that: 前一段时间我认真研究了一个事儿，那就是清华北大的朋友的轻松筹两天之内就能完成目标金额，而普通的人，没有圈子人脉关系网的普通人，想要筹到五万是难上加难。再一次验证了筹款也是具有鲜明的阶级性的。 Therefore, we want to figure out whether people with more social capital can raise money quickly and easier than those with less social capital in China. 2. Research designAt first, we wanted to focus on crowdfunding projects on charity in China. But it seems quite difficult to identify different advocates’ social capital in those crowdfunding websites. So we turned to venture projects. Rather than equity crowdfunding, we want to focus on reward-based crowdfunding projects. As for the online social capital, maybe we can define strong ties and weak ties in social media to describe the strength of social capital. Suggestions from Prof. Xiaoyu Xia: Compared with our idea that using discrete variables to describe the strength of social capital, it would be better if we could find a appropriate measurement of the strength of online social capital (a continuous variable); Whether there exists a turning point of the social capital’s impact on crowdfunding; Pay attestation to the endogeneity in research (the project’s characteristics v.s. the impact of online relationship). 3. Data Method: Data Mining Crowdfunding: Demohour Social capital: Sina Weibo official accounts of the projects in Demohour # of followers, # of followers’ followers # of Weibo posted during the period of crowdfunding # of comments and forwards of the above Weibo posted 4. References Granovetter, M. S. (1973). The Strength of Weak Ties. American Journal of Sociology, 78(6), 1360–1380. Gee, L. K., Jones, J. J., &amp; Burke, M. (2016). Social Networks and Labor Markets: How Strong Ties Relate to Job Finding On Facebook’s Social Network. Journal of Labor Economics, (February), 686225. Kang, L., Jiang, Q., &amp; Tan, C.-H. (2016). Remarkable advocates: An investigation of geographic distance and social capital for crowdfunding. Information &amp; Management, (January). Zheng, H., Li, D., Wu, J., &amp; Xu, Y. (2014). The role of multidimensional social capital in crowdfunding: A comparative study in China and US. Information and Management, 51(4), 488–496.]]></content>
+      <categories>
+        <category>学术</category>
+      </categories>
+      <tags>
+        <tag>research</tag>
+        <tag>crowdfunding</tag>
+        <tag>social network</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[竺可桢：科学的方法 公正的态度 果断的决心（文摘）]]></title>
+    <url>%2Fposts%2F35838699%2F</url>
+    <content type="text"><![CDATA[诸位同学，学校开课已一周，今天训育处召集这个会，能如家人似的在一起谈话，觉得非常愉快。 大学生，是人生最快活的时期，没有直接的经济负担，没有谋生的问题。诸位在中学中，同学大都是同县或同省，可是，来大学后，有从全国各方面来的同学，可以知道全国的情形，时间长了，各人都认识。这样，各人家庭的状况，故乡的风物，都能互相知道，这亦是一种教育。大学比之中学，在经费和设备方面，都来的充实，教师的经验和学识，也远胜于中学，这供给诸位切磋学问的极好机会。同时，国家花在诸位身上的钱，每年有一千五百元，而且，全中国大学生仅四万人，诸位都是这一万分之一的青年，这种机会，万万不能错过。 诸位到这里来，应该明了这里的校风。一校有一校的精神，英文称为 College Spirit。至于浙大的精神，可以把「诚」、「勤」两字来表示。浙大的前身是求是书院和高等学堂，一脉相传，都可以诚勤两字代表它的学风，学生不浮夸，做事很勤恳，在社会上的声誉亦很好。有的学校校舍很好，可是毕业生做事，初出去就希望有物质的享受，待遇低一点便不愿做，房屋陋不愿住。浙大的毕业生便无此习惯，校外的人，碰见了，总是称赞浙大的风气朴实。这种风气，希望诸位把它保持。 诸位在校，有两个问题应该自己问问，第一，到浙大来做什么？第二，将来毕业后要做什么样的人？我想诸位中间，一定没有人说为文凭而到浙大来的，或者有的为到这里来是为了求一种技术，以做谋生的工具。但是，谋生之道很多，不一定到大学来，就是讲技术，亦不一定在大学。美国大文豪罗威尔氏说：「大学的目的，不在使学生得到面包，而在使所得到的面包味道更好。」教育不仅使学生谋得求生之道，单学一种技术，尚非教育最重要的目的。 这里我可以讲一个故事。中国古时有一个人求神仙心切，遍走名山大川。吕纯阳发慈悲，知道他诚心，想送给他一点金钱宝贝，向他说道，我的指头能指石为金，或任何物件，你要什么我便给你什么。可是那个人并不要金钱宝贝，而要他那只指头。这故事西洋也有的，英文所谓 Wishing Ring，便是这个意思，要想什么就可得什么。世界上万事万物统有他存在的理由，朱子所谓格物致知就是即事而穷其理。要能即事而穷其理，最要紧的是一个清醒的头脑。 清醒的头脑，是事业成功的基础。两三年以后诸位出去，在社会上做一番事业，无论工农商学，都须有清醒的头脑。专精一门技术的人，头脑未必清楚。反之，头脑清楚，做学问办事业统行，我们国家到这步田地，完全靠头脑清醒的人才有救。凡是办一桩事或是研究一个问题，大致可分为以下三个步骤： 第一，以科学的方法来分析，使复杂的变成简单； 第二，以公正的态度来计划； 第三，以果断的决心来执行。 这三点，科学的方法，公正的态度，果断的决心，统应该在小学时代养成和学习的。中国历年来工商业的不振，科学的不进步，都是由于主持者没有清醒的头脑。瘟疫流行，水旱灾荒，连年叠见，仍旧还要靠拜忏求神扶乩种种迷信方法。兴办事业，毫无计划，都是吃了头脑不清楚的亏。风水扶乩算命求神等之为迷信，不但为近世科学家所诟病，即我国古代明理之君子亦早深悉而痛绝之。但到如今，大学毕业生和东西洋留学生中，受了环境的同化，而同流合污的很不少。大的企业如久大公司、永利公司和商务印书馆的成功，要算例外了。 来政府对社会所办的棉纱厂、面粉厂、硫酸厂、酒精厂和糖厂等，大多数是失败的。失败的原因或是由于调查的时候不用科学方法。譬如办糖厂，应在事先调查在该厂附近地域产多少甘蔗，出产的糖销至何处，成本的多少，赢利的厚薄，与夫国外倾销竞争的状况。若事先不调查清楚，后来必至蚀本倒闭。这类事在中国司空见惯，如汉口的造纸厂，梧州的硫酸厂，真不胜枚举。还有失败的原因是用人行政重情而不重理，这就是没有公正的态度。用人不完全以人才为标准，而喜欢滥用亲戚。每个机关、公司应该多聘专家，计划决定以后，外界无论如何攻击，都得照着计划做去，这样才能成功。 盲从的习惯，我们应该竭力避免，我们不能因为口号叫得响一点，或是主义新一点，就一唱百和的盲从起来。我们大家要静心平气的来观察口号的目的，主义的背景，凭我们的裁判，扪良心来决定我们的主张。若是对的，我们应竭力奉行。若是不对的我们应尽力排除。依违两可，明哲保身的态度，和盲从是一样要避免的。我们要做有主张有作为的人，这样就非有清醒之头脑不可。 现在，要问第二个问题，便是，离开大学以后，将来做什么样的人？我们的人生观应如何？有人认为中国的人生观很受孔孟的影响，实际影响最大的还是老子。孔孟主张见义勇为，老子主张明哲保身；孔孟主张正是非，老子主张明祸福。孟子说：「天之将降大任于斯人也，必先苦其心志，劳其筋骨」，诸葛亮「鞠躬尽瘁，死而后已」，这才不是享福哲学。老子说：「祸莫大于不知足」，又曰「祸兮福所倚，福兮祸所伏」。 中国一般人的最后目的还是享福。我们羡慕人家说某人福气好，娶媳妇进门，即祝之曰「多福多寿多男子」。就是生子的最大目的，也就是想年老的时候可以享福。中国普通人意想中的天堂，是可以不劳而获的一个世界，茶来开口，饭来伸手，这样享福哲学影响于民生问题很大。 人以享福为人生最大目的，中国民族必遭灭亡，历史上罗马之亡可为殷鉴。现在的世界是竞争的世界，如果一个民族还是一味以享受为目的，不肯以服务为目的，必归失败。我们应该以享福为可耻，只有老弱残废才能享福，而以自食其力为光荣。英国国王在幼年时，必在军舰充当小兵，惟其如此方能知兵士的疾苦。全世界最富的人是煤油大王洛克菲勒（Rockefeller），他的儿子做事从小伙计做起，所以他们的事业能子孙相传不替。 多年前，中日同时派学生留学（课程）欧美，中国的学生，一看见各类机械，便问从何处购买？何处最便宜？而日本的学生，只问如何制造？中国人只知道买，以享受为目的，而日本人则重做，以服务为目的；中国从前学工学农的人，统是只叫工人农夫去推动机器，耕耘田亩，而自己却在一边袖手旁观，这样讲究农工业是不会进步的。中国古代轻视劳力，现在已经完全改变，样样应该自己动手，这种人生观的改造，是极重要的。 以上所说的两点：第一，诸位求学，应不仅在科目本身，而且要训练如何能正确地训练自己的思想；第二，我们人生的目的是在能服务，而不在享受。 （竺可桢于 1936 年 9 月浙江大学开学典礼上的演讲，《国立浙江大学日刊》 1936 年第 18 期）]]></content>
+      <categories>
+        <category>札记</category>
+      </categories>
+      <tags>
+        <tag>ZJU</tag>
+        <tag>竺可桢</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[商学院里的经济学 PhD 项目和经济系的有什么区别]]></title>
+    <url>%2Fposts%2Fa0f84637%2F</url>
+    <content type="text"><![CDATA[本文被收录于 知乎圆桌 - 读个商学院 。 知乎回答链接 关注了好久的问题，最近刚入读某校商学院的经济学PhD项目，而敝校刚好在商学院和经济系都有经济学 PhD 项目，所以终于可以就自己近期的一些了解来答题了。 从行政管理上，以敝校为例，商学院的经济学项目（仅仅指 Economics ，不算 Finance 、MKT 这类的）在决策科学与企业经济学系（DSE）下面的 Business Economics 方向，而经济系在社会科学学院下面。通常社科院对经济系没什么影响力，而商学院对于我们系的管理权就相对比较大。比如申请材料寄送这块为例，经济系通常是直接寄去他们系里，而我们系的招生录取材料都需要先寄到学院那边。 从招生录取上看，我们系经济方向并不会每年都招人，因为我们系还有 IS 、OM 方向。即使招生，我们系 Econ 方向一年录取的人数也是很少的，就两三个学生这样的水平，而且我们系（包括其他两个方向）几乎不招 MPhil 学生（祝贺我系今年录取多年来第一个 MPhil 学生，撒花~）。而经济系的话，每年会招大概十几个学生吧（包括了 MPhil 和 PhD ），所以学生规模比较大，我们系各个方向在读的学生加起来估计也是十几或者二十几个这样的水平（没仔细统计过）。 从研究领域上，商学院经济学方向的PhD项目通常局限于微观方向，具体而言以产业组织、微观计量、行为经济学等为主，而且偏向于实证为主；而经济系的 PhD 项目方向会多元化很多，微观、宏观方向都会有涉及，理论与实证的也都有。这也从某个层面体现出，我们系 Econ 方向的老师数量少、研究方向较为局限；而经济系的老师数量多、研究方向多样（当然，两边的老师好像也有一些合作）。 从 Funding 而言，我们商学院钱真心比人家经济系多啊。举例秀优越时间到：office 条件远超经济系，惹得他们甚是羡慕（某经济系小伙伴参观完我们 office 后表示对他们的 office 彻底失望了），我们系是 3-5 人一间 office，每个人会给配备一台台式电脑，而经济系大概是 30+ 人一间大的 office ，不给配备电脑，桌子也比我们的小；以及，我们学院（不是我们系）今年给我们新入学的每个 PhD / MPhil 新生一万港币用于购买正版软件（支持正版，人人有责？），这个钱据说我们系往届学长学姐都没有，经济系那边也是没有的。参加会议资助这块不是很了解，所以就不提了。 从课程和培养计划而言，两边的课程设置基本上差不多，我们大部分课程也需要去经济系上（蹭课）。资格考试的话，我们系的第一次资格考试大致会在一年半或者第二年结束时候进行；而经济系的资格考试安排我听说是在第一年第一学期结束时候考一门微观，第二学期考一门宏观（不是课程考试），两次合起来作为首次的资格考试。 从 Placement 上来看，我们系经济方向最近毕业的两位学长学姐都去了业界（毕竟毕业人数少，找不到更多案例了），而经济系那边的话应该去学界找教职为多。]]></content>
+      <categories>
+        <category>札记</category>
+      </categories>
+      <tags>
+        <tag>知乎</tag>
+        <tag>economics</tag>
+        <tag>PhD</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[如何看待奔跑吧兄弟节目组去杭州博物馆拍摄]]></title>
+    <url>%2Fposts%2Fab08d9bc%2F</url>
+    <content type="text"><![CDATA[知乎回答链接 先说结论：（我不是来洗地的）个人认为，如果是在博物馆非开放时间段拍摄，而且付费+做好了「文物保护措施」的话好像没什么不妥。对，前提是一定要做好完善的文保措施；如果有损坏文物的风险，那么当然应该拒绝拍摄！同时，节目有必要担负一种文化宣传的角色，寓科普于乐。 杭州的博物馆建设真心不错，特别是在与游客互动这方面，所以以最大的善意推测，杭州博物馆应该是想借助节目推广杭州博物馆、向公众普及文物馆藏与杭州历史。节目在这方面的正外部性事实上也确实存在，观众在观看节目后，一些人（比如他们的粉丝）确实会因为跑男而去博物馆参观，而且我推测存在一部分人如果不是看了跑男，一辈子也不会去关注博物馆和相文物与历史。 作为一个博物馆非典型爱好者，我觉得我们千万不能有参观博物馆就是逼格很高的，看xxx综艺节目就是low的想法。博物馆要有严肃与神圣的东西，但不能永远保持一脸的高逼格状态。它要有科学的严肃性和权威性，也要有贴近大众的方面，让民众愿意去、想去，毕竟它还承担这科学普及的任务。抛开跑男不谈，就我自己在杭州参观各个博物馆的经历，我觉得杭州的博物馆确确实实在这方面在不断努力着。 对，我们不能排除一部分粉丝只是为了追星而去博物馆，看看摸摸明星到过的地方。但是，作为公共博物馆，我们不能因为参观者不同的参观动机而去拒绝他们、质疑他们。那么我们的博物馆能不能让这部分人在追星的同时，让他们在去博物馆追星时，感受到哪怕一丝丝的关于博物馆与文物保护的信息。我觉得只要有一个人因为节目而有了要去博物馆参观文物的想法，这就够了。博物馆不是就借一个场地+收钱而已，当其出借场地以后，还要确保物尽其用，毕竟你还是一个拿了财政资金支持的公共博物馆。 此外，我觉得跑男既然在博物馆拍摄，能不能考虑在做相关游戏的时候做一些科普工作，让游戏担负一种文化宣传的角色，寓科普于乐（比如把文物保护、历史普及等等纳入游戏的内容之中，而不是仅仅借了一个场地），我觉得这些是我们这个社会急缺的东西，这样做的话社会观感会更好，也会有更大的正外部性。 跑男2014年也说要在浙大紫金港校区拍摄，然而后来被我浙学子拒……绝……了…… 毕竟太吵了会扰民。]]></content>
+      <categories>
+        <category>碎碎念</category>
+      </categories>
+      <tags>
+        <tag>知乎</tag>
+        <tag>奔跑吧兄弟</tag>
+        <tag>综艺</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[本科毕业出国读研的户口与档案处理方法]]></title>
+    <url>%2Fposts%2Fedd2258%2F</url>
+    <content type="text"><![CDATA[知乎回答链接 本文不能作为档案存档、就业落户、党组织关系转接等手续办理的依据，请在参阅本文最后的参考链接、咨询有关部门人员、了解最新政策后再做决定（注：本文时效性截至 20160520）。 1. 境外的几个「没有」几个事实：境外没有 CCP 党组织（香港除了中央政府驻港机构、驻港部队等之外，没有 CCP 党组织）、没有人事档案/学籍档案，境外高校毕业后就业没有三方协议、没有报到证、没有毕业证书（仅有学位证书）。 2. 「应届生」身份与留学回国就业落户某些人宣称把档案放到原籍地的人才市场会使毕业生失去应届生身份，这个显然是错误的。其实应届生的严格定义是：「 境内高校应届毕业生」。 就是纳入当年就业计划的境内高校毕业生，就业计划是教育部按照各高校申报的名额定的。所以说，就算国内是 2015 年底毕业的学生，只要纳入 2016 年就业计划的，学校给开2016年的报到证，就算是应届生。至于海归，教育部很明确： 「应届生」的身份与档案存放地无关……留学回国人员不分应届和往届，一律没有三方协议，是否为应届，由用人单位界定。——教育部留学服务中心。 留学回国人员，无论档案存放地在哪里，符合教育部留学服务中心「就业落户」办理手续要求的，都可以在教育部留学服务中心依据相关流程（这时候通常需要将档案转到教育部留服短期存档一段时间），开具《就业报到证》，办理《落户介绍信》，在转档报到时与国内应届生一样待遇。 注意： 这里的《就业报到证》不是本科毕业时候开具的那个报到证，是教育部留学服务中心给留学回国人员开具的专门留学回国人员《就业报到证》。 3. 人才市场与留服全国称为「留学服务中心」的，提供档案存档服务的机构有两家，分别是北京的「教育部留学服务中心」（教育部留服仅此一家，绝无分店）和位于广州的「广州留学人员服务中心」。两者分属教育部和广州市人社局，互不隶属。也就是说，广州市的留服和全国其他地方的人才市场性质是一样的，都是人社局下属的提供档案存档服务的机构。 但是这三者均没有本质区别，均不收档案管理费，唯一的选择考量是以后办手续哪里方便一些（比如留港工作要去档案所在地开具《赴港工作同意书》）。境外学校的学习经历，档案在教育部留服的会在学历认证后自动归档相关证明，档案在其他地方的，可以自行把相关证明送交档案存档机构归档。此外，留学期间也可以将档案中途从人才市场转到教育部留服。 出国留学将档案存放在留学服务中心与存放在户籍所在地人才机构没有本质区别。留学人员出国前可自愿选择将档案存放在户籍地人才机构或留学服务中心。无论存放在哪里，对今后学成回国办理学历学位认证、就业报到证等，均无任何影响。 需要存档的留学人员，既可将档案存放在我中心（注：教育部留学服务中心），也可将档案存放在户籍所在地的档案保管机构，这对于留学人员学成回国后办理学历学位认证、就业报到证、在京落户等各项手续没有任何影响。——教育部留学服务中心 4. 党组织关系档案希望存放教育部留服的，请参考以下回答： 自费出国留学人员的档案存放在留学服务中心，党员组织关系不能转入我中心。根据中组部“组通字【2015】33号”文《中共中央组织部关于做好高校毕业生党员组织关系管理工作的通知》中的规定：出国留学和出境学习的高校毕业生党员，应将党组织关系保留在原就读高校党组织。——教育部留学服务中心 档案希望存放原籍地人才市场的，通常需要将党组织关系介绍信由学校开往县一级（县、县级市、地级市下属的区等）的县委组织部，然后由县委组织部开往乡镇党委、街道党工委（由于本人办理时候党龄不满一年，所以说不能直接转去所在社区/村级党组织，满一年的似乎是可以去基层党组织的）。 关于留学期间要不要过「党组织生活」，可以签署「保留党籍声明」来豁免参与组织生活但给予保留党籍，党费的缴纳可以具体咨询接收方党组织。 5. 关于户口在京高等院校就读的、非北京籍生源，符合一定条件的可以将户口放到教育部留服，其他的一律打回原籍地。 20160520更新：根据 M豆先生 提供的信息，留服现在已经不能存户口了。]]></content>
+      <categories>
+        <category>札记</category>
+      </categories>
+      <tags>
+        <tag>graduation</tag>
+        <tag>留学</tag>
+        <tag>档案</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[从影业路到影業路：一些关于MSc Econ的扯淡]]></title>
+    <url>%2Fposts%2F1682371f%2F</url>
+    <content type="text"><![CDATA[「影業路」，去 UST 的路上看到这条杭州也有的道路，让我一下子对这个学校有了几许的亲切感。杭州的「影业路」位于城西教工路和学院路之间，与文三路相交，得名于其附近的「浙江电影制片厂」；而这个在香港的影業路则是得名于其附近的「邵氏影业」。由于杭州的影业路就在我们「学军附大」附近（啊不，是西溪校区），所以大四时候经常光顾，而印象最深的当属「老街面馆」，一家窄窄的店铺里那碗面和辣椒酱让人回味无穷（图片有毒！看得我真心饿了～）。从影业路到影業路，算是一种很有趣的巧合。 初识科大初到科大，「火鸡」和「蔚蓝的海」一定最能吸引眼球的两样东西。事实上，我至今也搞不懂，为什么火鸡的身体和颈部要用一根钢管来支撑，我相信凭科大的工程技术水平应该不需要用这样的一根钢管来支撑这个雕塑。 学校很小，没有了紫金港的那种「气势磅礴」，走马观花大概只需要 40 分钟就可以走完。然而学校的各种设施条件却是很好，足以甩我浙几条街，而我一下子就喜欢上了这里的图书馆环境。 这里本科生和研究生其实是相对分裂的两个团体（其实内地高校也是）。本科生以 local 学生为主，而研究生多以 non-local 学生，尤其是内地生为主。学生社团大多数是本科生，很活跃，每天都会有社团在校园办活动。行走在校园，听一群人讲着粤语，对于一个不懂粤语的浙江人而言，会感到一种疏离，有一种「热闹是他们的，我什么也没有」的感觉。 关于课业上课时间并没有像一些 MSc 课程一样安排在夜间，MSc Econ 的课程都在工作日白天（然而早上上课实在起不来啊～）。个人而言，科大的 MSc Econ 上半学期的课业不是很重，大概是因为很多课程内容本科有所涉猎吧。 上学期的话，有一门数学复习课，会复习一下线性代数、概率论与数理统计、一点点常微分方程、基本的动态最优化方法。前三块内容大部分同学本科都学过，动态最优化这块可能一些学校本科时候没有讨论过，因此有些同学学起来会比较困难。不过好在都是一些变分法与最优控制最最基础性的内容，好好学一学加上做做练习题，基本上没什么问题。毕竟这门课只是通过性课程，不算入最后的成绩（哈哈～）。 微观的内容基本上在本科的中高级微观、产业经济学、博弈论、激励理论等课程中均有所涉及，不过感觉博弈论这块内容涉及的比重有点大。宏观会划分为两个教学班，不同的教学班不一样的教材，考核也会不一样；其中一个教学班用的是 Romer 的 Advanced Macro ，本科学过（然而并没有在这个班，而且本科是靠「师生情」过的关，多谢老师！），另一个班是老师自己编写的讲义，学的时候，我自己是「懵逼」的状态。毕竟和之前学的分析方法有所不同，渣渣表示适应起来有点困难，大概自己不适合学宏观吧。 计量的内容大多是本科涉及的内容，但不会讲授计量统计软件的使用（ Prof Chen 的意思是，大家辣么聪明，哪种软件只要在 YouTube 看半个小时一定都学会了）。毕竟重应用而不会对理论要求很深，整体难度不是很大，稍微有所拓展的大概算是 Pannel Data 部分，但是只是稍作介绍。 而下学期主要是一些选修课程，不同的人会有不同的选择，自己难以评判。考虑到万一今年申请PhD的结果不好，我打算选择 Research Preparation Concentration ，以便延迟半年毕业更好地准备下半年的申请。所以，自己就在选课的时候按照读 Research Preparation Concentration 的要求选了两门 PhD level 的课程（当然，如果想延迟半年，其实也可以选择在第三学期修读两门 PhD level 的课程），现在想来纯属「自虐」，苦逼地不要不要的。 关于去向从九月入学以来至今，很多同学都在找工作（找工作的话也要抓紧啊），所以大家的毕业去向也不是很明确，我个人不是很清楚各位同学的找工作的情况。由于香港不允许学生 visa 持有者在未获得入境处许可情况下在香港校外实习，所以为了丰富实习经历，目前也有一些同学会在内地（比如深圳）抽出时间来实习。另外，通常科大这边的 Career Center 会在春秋两季举办两场香港企业较为大型的招聘会，而且商学院这边也会提供比较完善、全面的就业指导与招聘信息。 关于升学方面，就目前了解有几位已经获得了 PhD programme 的 Offer ，也有同学在考虑选择 Research Preparation Concentration 。但是应该说总体上，选择继续升学的是极少数。]]></content>
+      <categories>
+        <category>碎碎念</category>
+      </categories>
+      <tags>
+        <tag>economics</tag>
+        <tag>HKUST</tag>
+        <tag>MSc</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[浙大人有哪些经典语录]]></title>
+    <url>%2Fposts%2Fb1c64774%2F</url>
+    <content type="text"><![CDATA[知乎回答链接 1. 两问竺校长：到浙大来干什么？ ZJUer：混。 竺校长：将来毕业要做什么？ ZJUer：混混。 竺校长卒。 竺校长：到浙大来干什么？ ZJUer：找妹子。 竺校长：将来毕业要做什么？ ZJUer：回浙大结婚。 竺校长卒。 2. 三宝我浙有三宝，校歌两问，鸡腿好！ 3. BG、BG、BG！4. 考败来浙5. 全国最水的大学。6. WSN/猥琐男 浙大男生们饱读诗书却不掩窗苦行，他们看透了伪卫道士盛行的时下，用青春阳光的活力和宜其室家的聪慧践行着 “猥琐”——这一看似龌龊实则最自然的生存之道。所以说，猥琐是由内而外显现的，猥琐带给人们的不单是感官上的挑战，它更是一种心态，一种向上的，积极的，坚持本真的态度。猥琐是人类最原始的本性，人从母体中赤裸落地，本身就携带着一些不容抹去的品性，又何必将缺陷藏着掖着，站在一边道貌岸然地斥责那一份真实地存在呢？ 一代代的浙大男生们不断地用自己的行动贯彻着这份真实。猥琐在一代代男生的努力下成为了正义、睿智、达观、踏实、打破偏见的代名词，曾有人这么形容浙大猥琐：智慧中略带狡黠，睿智中不乏幽默，以及对优秀女生特有的欣赏与执着追求的特质。猥琐是一份自嘲，更是一份浙大人特有的涵养。 回望大中华悠悠上下五千年，俯瞰黄土地沧海桑田多少载，能将猥琐二字演绎得如此精彩，仅浙大学子能之！……有人说，这人哪，只要猥琐了，就什么苦都能受，什么环境都能适应了。一位学长曾如是说，“猥琐是正义，是活力，是脚踏实地，是每一个工科生身上的责任。我们要猥琐得阳光，猥琐得精彩！”人不猥琐枉少年。 （摘自《浙江大学报》）]]></content>
+      <categories>
+        <category>碎碎念</category>
+      </categories>
+      <tags>
+        <tag>ZJU</tag>
+        <tag>知乎</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[再说缘分：PhD申请面试与录取之后]]></title>
+    <url>%2Fposts%2F8ce75603%2F</url>
+    <content type="text"><![CDATA[提交申请之后，其实主要就两件事情，其一是检查自己的材料是否提交齐全；其二是等待面试通知和参加面试。 检查自己的材料是否提交齐全其实是蛮重要的，特别是在你申请的项目如果比较多，不同学校的要求又不太一样的情况下。比如 CUHK 和 NUS 会要求你寄送纸质材料，而且 CUHK 还要求在录取前所有的 Standard Test 成绩必须通过官方送达；相反，像 HKUST 就是全部网申，录取前不需要寄送纸质的材料，送分也可以在录取之后进行。所以，建议提交申请之后可以发给申请的项目小米发邮件确认一下是否提交成功以及材料是否都送达了，有没有缺失的情况。 好吧，我的情况就是由于在申请季去考了一次 GMAT（分数低，为了刷分，好心酸），然后 GMAT 官方成绩单就一直没有寄送到，我就等啊等，等啊等，终于在三个星期多之后的寄送到了（虽说寄送时间其实不算长，但是在申请季等待这样一段时间其实也是蛮煎熬的）。当然，在此期间我一直和小米保持着联系，交了自己的成绩单副本，然后不断询问是否收到了成绩单，终于在寄出之后三个星期满的当天小米告诉我成绩单送达学校了。十分感谢 CUHK 商学院热心的小米（此处应有掌声）！通常，多同小米沟通没有什么坏处，起码能够及时得到申请学校的反馈，避免了什么都不知晓的情况下的煎熬等待。 说到面试，我的 CUHK 面试通知其实是毫无准备中意外砸过来的。为什么这么说呢？嗯，作为一个英语渣，我在申请季又去考了一次 TOEFL ，辛酸。是的，没错，除了考了一次 GMAT ，还又去考了 TOEFL，都是在香港考的（关于怎么样在香港考，GMAT 可以直接在以前内地报考的时候的 GMAC 官网报名，TOEFL 直接去 ETS 官网报名，不要去教育部考试中心那个渣系统报名，按照要求注册账号报名即可，两个考试请都使用「护照」而非「往来港澳通行证」去考试，不过我相信优秀的你应该是不需要像我这样再考了吧）。 又说跑题了。关于收到面试通知，说到又去考了一次托福，具体情况是这样的。我 1 月 4 日提交了 CUHK 的网申（拖延症表示 ddl 是 1 月 5 日），然后到了 1 月 24 日，那天是周日，天大寒（香港难得一遇的寒流袭来）。上午去考了托福，考完出来打开手机后赫然发现一封电话面试邀请邮件，说希望当天电话面试，让我回一个电话号码过去（我真的是什么准备都没有啊）。于是回去之后诚惶诚恐地回复了一个香港的手机号码（我要强调是香港的是因为，后来老师打给我的居然是内地 +86 的手机号码），然后赶紧打开电脑熟悉申请专业的情况、回顾自己的申请文书材料。 当天晚上就愉快地接到了电话面试，电话是系里一个教授打来的，说是负责系里面 Economics 方向招生的（当时有点懵逼，Econ 不是在社会科学学院下面么）。哎，我当时在想些什么乱七八糟的东西。事实上，这个系分三个方向，IS、OM、Econ，然而我其实是挂完电话去学院网站查了才知道的，我申请时候真心就是看着这个系名字带个「Economics」就申请的啊。面试是用的中文普通话。上来先问了一个问题「你怎么现在在香港」，我一脸懵逼地回答「因为…… 我在香港念研究生」。 后面大致就是让我先介绍了一下自己的情况（我当时主要介绍了本科的科研训练情况和课程情况），然后教授也和我稍微聊了聊现在研究生阶段的大致情况。我问了一下入学之后导师确认的事情，他告诉我是入学后双向选择的。当然他也介绍了他们项目和 faculty 的一些情况，还问我有没有申请其他学校，我说了也申请了在读 MSc 的 HKUST 的博士。所以老师还问我如果在两个学校之间选择的话我会选择哪个学校之类的情况（废话，当然是说要去 CHUK 啦，不过搞得我好想会有得选一样，老师你真是想太多了 hhhhh ）。 不过由于我当时只是把网申交上去了，推荐信也刚刚几天前提交，其他材料都还没寄过去，所以他那边在打电话给我面试的时候手头并没有 PS、RP 之类的材料，只有申请表的相关信息（对，每错，难为老师您了。作为拖延症真心伤不起，因为网申时候文书还没全部搞好，急急忙忙先提交了网申再说）。他让我面试结束之后先把材料Email发给他（幸好面试前几天刚刚把文书都准备好了），说我这个背景情况什么的和他们 program 挺合适的，好像手头还有几个 candidate ，会一起 recommend 上去给 committee（以上单词为老师原话，其实我也不知道具体是 recommend 到哪里）。大致就这样的内容，由于老师手里也没有我的 research proposal ，所以我之前看到网上说的 PhD 面试会对 RP 进行提问的情况也没有出现，导致我挂完电话继续懵逼中，都不知道算不算正式面试。 后来啊，就什么消息都没有了，其他学校也没有找我面试（对，没错，本学渣就只收到一个学校一个专业的面试，其他申请的都杳无音信至今）。我就等啊等啊，焦虑万分，就怕失学失业，期间还投了一份 Full-time RA 的工作，也打算着是不是把MSc学习时间延长半年，准备着如果失败了下半年再申请（Plan B还是必要的嘛）。之间和老师、小米沟通过几次，过了整整六个星期，到了 3 月 10 日，终于收到了 CUHK 研究院给我发来了 Admission Notification 和 Letter of Award 。当时，整个人都飘起来一样啊，有一种想仰天大笑的冲动。说到这里，想起来，还要十分感谢在 ZJU 的小伙伴「龚大师」帮我开成绩单、帮我找老师写推荐信还有寄材料，而且你办事效率快起来惊人啊！哈哈哈～ 录取之后：再说缘分 其实，感觉录取之后心情也马上就平静了，然后就开始把后续的事情一件件处理起来（废话，当然平静了，因为后面马上袭来了一大波的作业…… 心塞 again ）。交留位费、申请入境许可、申请宿舍、回复接受奖学金…… 自己列了一个长长的 checklist ，一件件事情就很快搞定啦。后面基本上把这些手续都处理完了，还给帮我写推荐信的几个老师都发了一下感谢信，感谢他们热心地帮我这个毕业生申请学校推荐。 其实呢，为什么就这样接受了 CUHK 的 offer ，自己主要是这样考虑的：一个是自己感觉 CUHK 学科实力不错，自己对研究方向也比较感兴趣；而且自己也比较熟悉这个学校的情况（本科学校和 CUHK 联系比较紧密，所以本科时候就有所了解了）；还有是学校面积大（自从经历了我浙 zjg 的超大面积校园，到了 UST 的小小校园就不舒服，呵呵）、交通条件什么的不错（我这都是什么奇奇怪怪的选择的原因，虽说真心是这样考虑的，不过其实就是一句话：其他学校没有给我 offer 啊，摔）。 觉得能够被录取也算是另外「一种缘分」了。自己 G、T 成绩很低，然后最初又是误打误撞申请的这个专业，面试时候又什么材料都还没寄送过去，最初对申请的这个专业不算很了解，粗粗看了一下大概情况以后就申请了，连分几个方向什么的都是后来了解的（不过后来在等待 offer 的时候，确实是了解了很多，基本上把情况都熟悉了，发现自己还是挺适合的）。这样的情况，能够被录取，有一种被 offer 从天上砸中的感觉，我愿意相信以前本科时候一直以来的那种「缘分」延续到了香港吧。 也祝你有「缘分」常伴左右。]]></content>
+      <categories>
+        <category>札记</category>
+      </categories>
+      <tags>
+        <tag>知乎</tag>
+        <tag>PhD</tag>
+        <tag>CUHK</tag>
+        <tag>留学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Apply for PhD：为什么与怎么样]]></title>
+    <url>%2Fposts%2Fac37e71c%2F</url>
+    <content type="text"><![CDATA[上个月被香港中文大学商学院「决策科学与企业经济学博士项目」录取了，也算是申请告一段落了，好不容易稍微空一点下来了（喂，那只不过是你拖延症好吗，前几天本来也应该挺空的），那就来写写申请的总结好了。大致准备分成两篇文章写，一篇写写为什么想申请 PhD 、怎么样准备；另一篇写写申请提交之后的经过以及录取后的一些东西。大概就都是自己的一些经历总结吧，也算不上什么经验，就当是一个回顾反思好了，如果能够给其他想申请的同学提供一点小小的帮助就再好不过了。 香港，香港！博士，博士！通常，无论是申请香港硕士课程还是博士课程，一定会遇到的两个问题是：「Why master / PhD」和「Why Hong Kong」。既然如此，那就先来谈谈我为什么想申请吧。 首先，当初没有选择本校保研而来香港读 MSc 主要是觉得在一个学校待了四年，希望有所改变吧。毕竟如果继续在同样的学校（虽然是从紫金港/西溪搬到玉泉了）以及遇到的是同样的老师，感觉会相当的无聊，可能自己也不会有很大的提高吧。其次，也是考虑到香港作为一个华人社会，自己也是比较能适应的，而且她的几所学校实力都比较强，算是一个不错的选择（我是不会说其实是因为我去不了美帝 top 学校的）。 其实一开始也没想着要读博士吧，去年这个时候自己是打算去读个硕士，毕业了直接工作，觉得去读个 PhD 那真的是进火坑啊。MSc 入学之后的一个月期间，我又重新考虑了自己的职业规划。这一个多月我确实想了很多。想着去工作吧，自己的实力不够去比较喜欢的岗位，其他的岗位吧自己又不算是很感兴趣。去读博士吧，感觉四五年的时间也是一段很长的过程，自己能否坚持下来，自己是不是适合，感觉这一切都是未知数。而且，基本上不太可能有精力一边找工作一边申请学校这样两手准备，这时候看到身边的小伙伴很多都开始着手投简历、参加宣讲会什么的，心里确实很急。 后来我也不断分析自己的情况，也咨询了一些学长学姐和老师，最后决定要申请PhD。现在自己回头看，大概有这几方面的考量：自己感觉当时确实还没有做好一年后去工作的准备，感觉自己各项能力都比较薄弱（毕竟四年的本科理论基础较为扎实，但是应用这块相对欠缺）；而且慢慢地觉得对科研与学术这块也是挺感兴趣的吧，感觉自己更偏向于适合做研究分析这块的工作…… 这里也真的需要谢谢那段时间和我交流想法的各位同学、学长与学姐。事实上，自己的申请动机都是 Chen 同学与Dang同学激发出来的，他们两位在来香港之前与之后都提起过自己想申请 PhD 的想法，也交流过各自的看法，他们的申请想法直接地鼓舞了我决定申请（然而世事难料啊，最后他们都半路放弃决定不读 PhD 了，说好了一起愉快地读博呢，就这样被「抛弃了」）。还有就是要谢谢好多的学长学姐，他们有的给我介绍了在职场中工作的体会，为我分析自身的情况，有的则是十分热情地给我介绍了读博的感受体会、申请的过程…… 可以说，正是因为他们的帮助，让我看清了自己的不足与长处，让我比较清晰地给自己做了规划，让我下定决心读 PhD 而且是入学之后的当年就申请。 Get my hands dirty既然准备申请了当然就要看看要申请什么学校啦。香港、新加坡这边其实申请的话比较简单，不需要怎么选校，我个人是申请了 CUHK、HKUST、HKU、NUS、NTU 五个学校的经济、金融相关的几个项目。看着自己这么晚申请+渣语言成绩，所以就没有打算赶着 12 月 1 日的 DDL 去申请 HKPFS ，看了一下差不多这些学校普通的PhD申请DDL基本上都是1月初截止的。下面就是要抓紧把材料准备好啦，「懒癌晚期+拖延症患者」强烈建议：抓紧抓紧抓紧（重要的事情说三遍）！申请材料这块我真心由于自己拖延症，战线拉得太长了，感觉如果抓紧一些的话应该不会这样耗时（由于拖延导致的奇葩经历，先卖个关子，我考虑在第二篇文章再谈谈）。 文书方面这块大致需要这些东西吧： CV/Resume：有的学校不会明确要求提供，但是填写的网申其实就是一份简历的内容了，这里面可能需要比较重视的就是对自己科研经历的阐述，做的项目内容方法是什么，有没有资助和获奖什么的。感觉自己这方面还算比较丰富吧，在本科做了几个项目，拿了几个奖项，然后读 MSc 期间也给系里的一个 Assistant Professor 做了水水的 Research Assistant 。 Statement of Purpose：其实就是刚才说的那些 Why ，以及自己的优势和能力等等，个人感觉可以借助PS让自己简历上冷冰冰的条目饱满起来，不过相对而言不是申请中很重要的因素。 Research Proposal：大致就是一个开题报告，讲讲自己为什么选这个课题、准备怎么做，由于我申请的经济金融商科这类不需要套磁，所以选题也是要自己琢磨的，基本上要契合自己申请的这个专业方向（不需要套磁好开心，毕竟如果要套磁的话我这种开始申请晚的一定没有什么优势了）。这里要特别谢谢在 CUHK 读 MPhil 的我们大经济 You 同学给我她申请的 RP 做参考模板。 两位推荐老师与推荐信：推荐信在申请时候还是相当重要的东西，有时候如果你有一封牛推的话就可以比较好地弥补某方面的相对不足，找谁写就看大家各显神通了。我找了一个老师主要推荐我在科研训练时候带领团队做研究时展现的领导与组织能力，另一个老师写我个人的学业水平和学术科研基础。 Previous Writing Sample：这个并不是每个学校都要求交的，但是 CUHK 商学院是必须的，我是把自己的本科毕业论文翻译成英文交上去的。 除了文书，大概其他的东西和 MSc 申请的差不多： Transcript &amp; GPA System &amp; 学位证书与毕业证书翻译件：本科 GPA 刷高、刷高、刷高（重要的事情说三遍）。顺便吐槽一下，为什么各个学校开成绩单都这么贵？ TOEFL or IELTS：托福成绩是硬伤，不说了，伤心 (；′⌒`) 另外好像 GMAT 的 Verbal 达到一定分数的话，CUHK 商学院是可以将此作为语言成绩的证明的。 GRE or GMAT：GMAT 成绩是硬伤，不说了，伤心 again (；′⌒`) 集齐上述的各个材料，我们就可以召唤神龙啦，啊不，是可以着手网申了。网申其实蛮简单的，除了个别学校的的系统比较渣。然后有些学校的网申系统会有字数限制什么的就感觉不太爽，一个一个删除字符缩句真是心累。基本上填完网申、交完申请费、寄出去该寄的纸质版材料，那么申请的这块就算是迈出了第一步啦。]]></content>
+      <categories>
+        <category>札记</category>
+      </categories>
+      <tags>
+        <tag>知乎</tag>
+        <tag>PhD</tag>
+        <tag>CUHK</tag>
+        <tag>留学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[春节澳门游计划]]></title>
+    <url>%2Fposts%2F42b4e0d0%2F</url>
+    <content type="text"><![CDATA[【按】这是 2016 年春节爸妈来港和我一起过年时候，去澳门玩之前而做的旅游计划。出游时间是大年初二，澳门街头人潮汹涌，十分热闹。注意，这份只是出行前制定的旅游计划，不是游记。 计划的路线如下：香港上环港澳码头 → 澳门外港码头 → 新葡京酒店 → 玛嘉烈葡挞 → 议事亭前地 → 手信街 → 大三巴 → 澳门博物馆、炮台→ 新葡京酒店 → 澳门外港码头 → 威尼斯人酒店 → 渔人码头* → 澳门外港码头 → 香港上环港澳码头 1. 香港上环港澳码头 → 澳门外港码头这里需要注意，如果没有提前买票而直接去码头购票，高峰期可能无法随到随走，而且柜台售票排队人多，自助机只接受 VISA 或者 Master 的信用卡支付，且一张卡只能购买两张（那天三个人去玩，幸好我们手握两张信用卡）。 2. 澳门外港码头 → 新葡京酒店 → 玛嘉烈葡挞出了码头，就能看到很多手聚各家赌场的牌子，找到新葡京酒店免费巴士（绿色，直接接到新葡京的地下停车场，去程是免费上车的，回码头就需要出示票了，这个票跟赌场里的荷官要），上车到新葡京酒店。不进葡京酒店，顺着殷皇子大马路一直走250米左右，在一个十字路口就可以看到躲在各种金铺招牌中的玛嘉烈葡挞的招牌。顺着招牌指示方向走，可以发现玛嘉烈葡挞。 3. 玛嘉烈葡挞 → 议事亭前地 → 手信街吃完玛嘉烈继续往前走，大概走上300米，来到议事厅前地（新马路，也就是喷水池那块空地），新马路就是那条有名的手信步行街，街上还有民政总署、玫瑰教堂。沿途：义顺牛奶（红豆双皮奶），沿街一路小坡上去，很多饼家、肉干店。 4. 手信街 → 大三巴 → 澳门博物馆、炮台手信步行街的尽头就是就是澳门的标志性建筑「大三巴」，大三巴旁边就是博物馆和炮台山，步行去博物馆和炮台山。 5. 大三巴 → 新葡京酒店 → 澳门外港码头 → 威尼斯人酒店从大三巴牌坊原路返回到新葡京赌场拿免费车票到外港码头，找赌场的荷官拿，就可以去B1乘车了，返回到外港码头（一定要拿回程车票哦，即使你没有在赌场赌钱）。下车直接边上就是威尼斯人的巴士，车身是蓝色的，坐车大概20多分钟（PS：威尼斯人酒店的免费巴士，去程及回程都是不要车票的，直接上车就好了）。 6. 威尼斯人酒店 → 渔人码头 → 澳门外港码头 → 香港上环港澳码头 只要搭上「威尼斯人-金沙娱乐场」免费接驳巴士，在金沙酒店门口右边斜对面就是渔人码头，渔人码头像一座小城市，单是逛逛，一两小时也嫌不够，这里也是澳门的一个购物场所，很多小纪念品可以在这里买到。 搭「金沙酒店-威尼斯人酒店」免费巴士到威尼斯人，换乘威尼斯人到外港码头或者氹仔码头的免费车，到这两个码头，最后再坐船回香港，大多数都是回到外港码头，这个码头比氹仔码头的船要多一些。]]></content>
+      <categories>
+        <category>札记</category>
+      </categories>
+      <tags>
+        <tag>Macao</tag>
+        <tag>travel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[如何看待毒舌婊对于曾博的评价]]></title>
+    <url>%2Fposts%2F35758c8e%2F</url>
+    <content type="text"><![CDATA[知乎回答链接 谢邀（第一次被邀请，好激动） 我觉得我已经把曾博拉黑了啊，为的就是不被曾博把我的 timeline 刷屏。关于曾博，我个人了解不多，对于毒舌婊，我亦了解不多，所以不好多做评论。这里就基于个人看了曾博关于我浙的一些回答与评论，说说我的看法。 曾博算是一个「考败来浙」的典型人物吧，这一类人高中时候的目标就是清北及以上，然而由于意外来了我浙（不好意思，我也算是考败来浙）。由于考败来浙，曾博应该是有些许不甘心，同时由于浙大这个平台一定程度上限制了曾博个人发展，所以曾博会常常付出感慨，想当初多考几分该多好。（ps: 评论说勃勃不是考败来浙，所以以上这段可能有偏差。 20160129 22:15） 对于这类想法，我并不反对。但是，这种事情既然已经过去那么久了（你都去 Berkeley 了），还心心念念，幽怨连连，就让我看不下去了。没错，我浙可能在一定程度上限制了更高水平的学生的进一步发展，可能去其他地方更能发挥才华，但是在现状已然如此的情况下，为何不利用这个平台努力做得更好。 更何况已经毕业了，去了 Berkeley ，也许意识到或许当初去T大前景更好，但是毕竟比当初考败来浙的近况改变了啊，人生不就这样一步一步努力改变吗？既然认为当初的「意外」使自己落后了，不就应该一步一步改变，一步一步追赶领先的人吗？或许有的人你可能因为一次落后而永远追不上了，但毕竟可以追赶上一大波人。 你可以幽怨说自己因为来了我浙，导致自己多么多么失败，可以劝告像你一样的人避免重蹈覆辙（关于这点我并不反对）。但是，世界上并不都是曾博这样的人，好多人没有曾博这样的水平（我指的是学业、学术等这方面），不能说因为去了某些曾博之流认为的「三流」学校就说「你的人生很失败」。 而且成功与失败，从来都不只有一个标准，永远也不应该以某些人认为的某一个或者某几个标准而界定你成功与否，去界定某些学校培养的学生优劣（我就认为我浙培养出来的大部分学生是很优秀的，而且在某些方面会比那些所谓的「一流与二流」学校优秀，当然这个方面并不局限于学业与学术、职位与薪资等等）。 所以，你可以在你的小圈子里幽怨，可以不断地感慨当初怎么不应该。但是，对于你在知乎上的一些言论，我觉得值得商榷（鉴于言论自由，所以我也不能对于这类行为表示反对，但保留意见）。当然，我相信，博博是爱我浙的，而且是真爱。 第一次受邀，有些激动。]]></content>
+      <categories>
+        <category>碎碎念</category>
+      </categories>
+      <tags>
+        <tag>ZJU</tag>
+        <tag>知乎</tag>
+        <tag>曾博</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[学习「高级微观、高级宏观、高级计量」是一种什么样的体验]]></title>
+    <url>%2Fposts%2F7d71d0d9%2F</url>
+    <content type="text"><![CDATA[知乎回答链接 本科的培养方案要求学高级微观（教材 MWG）、高级宏观（教材 David Romer），以及为了学习宏观而做准备的数理经济学（就是坑爹的变分法与最优控制，用了一本没有中文版的原版教材 Kamien MI, Schwartz NL. Dynamic Optimization: The Calculus of Varia tions and Optimal Control in Economics and Management），计量学到中级（教材 Woodridge）。 幸好培养方案没有安排高级计量； 迷失在课堂中，分数惨不忍睹，数学渣渣多谢师生情得以顺利毕业； 怎么班里有可以和老师谈笑风生的人，好厉害（别感叹了，快去抄板书！对，抄抄抄，一直到下课）； 知道了经济学原来是这样的，这…… 样…… 的； 求看到 MWG 和 Romer 时的心理阴影面积； 写高宏作业（Romer 课后题）才发现自己相当 naive ，反正看了半天不会做，抄答案吧，答案怎么这么长，手都抄酸了……（就不说 MWG 课后题了）； 如何优雅地听高宏高微课：大家沉默我也跟着沉默，大家笑我也跟着笑，这样就好像我也听懂了的样子； 练就了好多段子手； 受到最大的伤害是：室友看到他高宏成绩后表示，居然只有 85+ ，没有 90+ 不科学；看到数理成绩后表示居然只有 90+ ，没有满绩不科学；看到高微 95 满绩了，终于开心了（我为他感叹，怎么不是满分，不科学）； 考试周同学们的微信头像不是教材作者照片就是任课老师照片。 Anyway, economics loves me! 利益相关：学军附大「应用数学与最优化」试验班本科毕业生]]></content>
+      <categories>
+        <category>碎碎念</category>
+      </categories>
+      <tags>
+        <tag>ZJU</tag>
+        <tag>知乎</tag>
+        <tag>economics</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[被校歌洗了脑是一种怎样的感受]]></title>
+    <url>%2Fposts%2F6d350708%2F</url>
+    <content type="text"><![CDATA[知乎回答链接 电脑里存着校歌 mp3 和 mv ，还有西区晚自习结束曲——钢琴曲梁祝～ 毕业论文后记 每段的开头就是引用了校歌的几句歌词，然后把全文串起来的～～ 习坎示教，始见经纶：这部分主要感谢老师念哉典学，思睿观通：这部分写自己学业学术努力与成果无曰已是，无曰遂真：这部分写自己在大学期间的思考与感悟]]></content>
+      <categories>
+        <category>碎碎念</category>
+      </categories>
+      <tags>
+        <tag>ZJU</tag>
+        <tag>校歌</tag>
+        <tag>知乎</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[一种缘分：本科毕业论文后记]]></title>
+    <url>%2Fposts%2F5f2e9d5%2F</url>
+    <content type="text"><![CDATA[如果说毕业论文选择这个课题是一种偶然、一种缘分，那么在这四年里，有太多的缘分，让我无法一一言说。有时候，缘分，是一种说不清楚的东西。 2009 年 7 月，时维盛夏，我很偶然地来到了启真湖边。我当时没想过要考浙大，当然也想不到两年后将与之结缘、再相会，在这里开始四年精彩的大学生活。 四年里——拿过几次奖学金和三好学生的荣誉，申请到了两个科研训练项目，也参加过一次对外交流；曾经作为志愿者为生活、成长的这个社会奉献了自己的一点点力，也从社会实践和实习中学习到了许多在课堂里没有的知识；入党了也给校长信箱写过信，给母校发展中的不足提出了自己的意见和看法；游历了学校分布杭州的五个校区，还上过 CC98 论坛六次「十大」，更体验了报销中的各种艰辛……本科四年，俯仰之间，求学、自省、成长于此。「逝者如斯夫，不舍昼夜」，悄然之间四年已近尾声，倏忽之间成长。内化于心的，不只是一曲「大不自多，海纳江河」，还有一种与「我浙」的缘分。 「习坎示教，始见经纶」。每每喟叹少有能堪称传道、授业、解惑之师，细细想来，实则不然，还是得到了颇多良师之教诲。本人数理基础不佳，数学课于我颇有挑战。但我却能在数学系汪国军老师授课之《线性代数》课上听得津津有味，此为良师。学习经济理论需要数理分析，亦需要经济思考，颇为不易。经济系何樟勇老师在讲授《中级宏观经济学》课程之时却能将两者娓娓道来，让人有恍然大悟之感，是为良师。耳闻法学院沈志坤老师之《经济法》课程十分有趣，遂选课。沈老师授课时理论与实践的结合颇为巧妙，回想答完该课程期末考卷，当时有一种酣畅淋漓之感。《计量经济学》课堂上，金融系徐加老师告诫我们计量实证出来什么结果就什么结果，虽然可能和设想不同，但终归是可以用经济理论解释的，千万不要造假。言语已随风而逝，可是他传达的治学态度却融入了自己的举手投足，此文撰写时亦是每每想起。 「念哉典学，思睿观通」。本科四年，专于经济一科，本专业被戏谑为「应用数学与最优化专业」。求学经济学科，初为经世济民之宏愿。曾三次尝试经济学之学术研究，即第 13 届挑战杯、SRTP 项目、省创项目；两度参加「挑战杯」学术竞赛，均获校三省二。深感能力有限，三次尝试均感无所创新，后每见「经世济民」一词，颇有惭愧。同侪曾叹曰：「我们本来想画一只国画的老虎，结果只能画一只猫，最后发现只是画了一只哆啦 A 梦！」虽说学术无所得，但是训练了自己的探究能力，毕业论文的顺利完成一定程度上也要归功于先前科研训练之经历。同时，因为学术、因为科研结缘，交友人二三，亦是幸事。回望当时几人志同道合、共同奋斗的经历，有一种莫名的激动。 「无曰已是，无曰遂真」。写此短文之前，翻阅了两篇文章。一篇是初入求是园之时所写，该文文笔之中透露出一种年少轻狂的傲气，正如「考败来浙」是很多求是学子的谈资一样，患有非典型性的「浙大病」。另一篇是在主修专业确认后写的，少了几分傲气，多了几分踏实。然而当时所立之大学目标——读书、锻炼，却成遗憾。现在毕业论文业已成稿、毕业出路已定，也算是尘埃落定了。想起初中第一篇语文课文是《在山的那边》，在求是园四年的时间，颇有此文之情境。这是一段不断发现在这座山的那边还有更广阔世界的过程，不断反思自己的取舍得失、不断尝试独立思考的过程。 2013 年 7 月，又是一个盛夏。又因为一次偶然，在学校网上看到有一个前往香港暑期交流的机会，遂听宣讲会、报名、面试，得以成行。当时跨过深圳湾口岸，我一定想不到两年后将要再次踏上这片土地，开始新的求学之路。就在之前申请学校时，由于自己标准化成绩很低，我都完全没有想过自己能够去清水湾。想来，或许就是这样一颗平常心去申请、去面试，得以让在浙大的缘分延续到香港。 所有这样的偶然，我愿意相信是一种缘分，也愿缘分常伴！ 2015 年 4 月 13 日夜于求是园・西溪2015 年 5 月 26 日修改]]></content>
+      <categories>
+        <category>札记</category>
+      </categories>
+      <tags>
+        <tag>graduation</tag>
+        <tag>ZJU</tag>
+      </tags>
+  </entry>
+</search>
